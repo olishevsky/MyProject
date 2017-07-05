@@ -1,0 +1,416 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../font/RobotoRegular.ttf); 
+}
+@font-face {
+    font-family: IntroBold;
+    src: url(../font/IntroBold.ttf); 
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+h1{
+	font-family: IntroBold;
+	text-transform: uppercase;
+	color: #a84a3e;
+	font-size: 46px;
+}
+h4{
+	font-family: IntroBold;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #161515;
+	display: block;
+	opacity: 1;
+}
+#main{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.line{
+	height: 1px !important;
+	width: 600px !important;
+	background: #e3e3e3;
+}
+/*
+######################################################################
+######################################################################
+##                             Header                               ##
+######################################################################
+######################################################################
+*/
+header{
+	height: auto;
+	width: 100%;
+}
+	#content-header{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+	}
+		#black-block-background{
+			display: none;
+		}
+		#black-block-background{
+			display: block;
+			width: 100%;
+			height: 82px;
+			background: #383838;
+			position: absolute;
+			z-index: 0;
+			top: 0;
+		}
+		header nav{
+			height: auto;
+			width: 650px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+			z-index: 1;
+		}
+			#content-header > nav > a{
+				font-size: 15px;
+				font-family: RobotoRegular;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: white;
+				border: 2px solid transparent;
+				padding: 8px 14px 8px 14px;
+				border-radius: 10px;
+			}
+			#content-header > nav > a:hover{
+				border: 2px solid white;
+				transition: all 0.25s;
+			}
+/*
+######################################################################
+######################################################################
+##                             /Header                              ##
+######################################################################
+######################################################################
+*/
+/*
+######################################################################
+######################################################################
+##                            Content-3                             ##
+######################################################################
+######################################################################
+*/
+h1{
+	margin: 50px 0 50px 0;
+}
+#content-3{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 24px;
+}
+	#content-3-news{
+		height: auto;
+		width: 1145px;
+		display: flex;
+		justify-content: space-between;
+	}
+	#content-3-news > img{
+		height: 272px;
+		width: 288px;
+	}
+		#content-3-news > div{
+			height: auto;
+			width: 800px;
+		}
+			#content-3-news > div > div{
+				height: auto;
+				width: 100%;
+			}
+				#content-3-news > div > div > p{
+					font-family: Roboto Regular;
+					font-size: 14px;
+					color: #9c9c9c;
+				}
+		#content-3-news > div > div:nth-child(1){
+			margin-bottom: 34px;
+		}
+		#date-news{
+			font-family: Roboto Regular;
+			font-size: 11px;
+			color: #9c9c9c;
+			margin: 34px 0 45px 0;	
+		}
+			#content-3-news > div > a{
+				height: 34px;
+				width: 253px;
+				display: block;
+				text-align: center;
+				padding-top: 12px;
+				font-family: Roboto Regular;
+				font-size: 16px;
+				color: #9c5245;
+				text-decoration: none;
+				border: 2px solid #9c5245;
+				border-radius: 12px;
+			}
+			#content-3-news div > a:hover{
+				color: white;
+				background: #9c5245;
+				transition: all 0.25s;
+			}
+@media only screen and (max-width: 1200px){
+	.line{
+		display: none;
+	}
+	#content-3{
+		height: auto;
+		margin-bottom:75px;
+	}
+	h1{
+		margin-bottom: 50px;
+	}
+	#content-3-news{
+		height: auto !important;
+		width: 700px;
+		flex-direction: column;
+		align-items: center;
+	}
+		#content-3-news > img{
+			margin-bottom: 30px;
+			height: 665px;
+			width: 701px;
+		
+		}
+	#date-news{
+		font-size: 15px;
+		text-align: center;
+		margin-top: 10px;
+	}
+		#content-3-news-content{
+			width: 600px !important;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#content-3-news-content:nth-child(2) > div{
+			margin-bottom: 50px;
+		}
+}
+/*
+######################################################################
+######################################################################
+##                            /Content-3                            ##
+######################################################################
+######################################################################
+*/
+/*
+######################################################################
+######################################################################
+##                             Content-4                            ##
+######################################################################
+######################################################################
+*/
+#content-4{
+	width: 100%;
+	height: 438px;
+	margin-top: 175px;
+	position: relative;
+	z-index: 0;
+}
+	#content-4-rhombus{
+		height: 150px;
+		width: 150px;
+		background: #9c5245;
+		border-radius: 15px;
+		transform: rotate(45deg);
+		position: absolute;
+		top: -75px;
+		left: 50%;
+		margin-left: -75px;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		#content-4-rhombus > div{
+			height: 50px;
+			width: 50px;
+			background-image: url(../img/map/map.png);
+			transform: rotate(-45deg);
+		}
+	#content-4 > div:nth-child(2){
+		width: 410px;
+		height: 220px;
+		border-radius: 15px;
+		background: white;
+		position: absolute;
+		left: 75%;
+		margin-left: -205px;
+		top: 50%;
+		margin-top: -110px;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+		#content-4 div:nth-child(2) > div:nth-child(1){
+			font-family: RobotoRegular;
+			font-size: 21px;
+			color: #161515;
+			padding-bottom: 18px;
+		}
+		#content-4 div:nth-child(2) > div:nth-child(2){
+			width: 278px;
+			height: 1px;
+			background: black;
+		}
+		#content-4 div:nth-child(2) > div:nth-child(3){
+			font-family: RobotoRegular;
+			font-size: 14px;
+			color: #b7b7b7;
+			margin-top: 18px;
+			margin-bottom: 10px;
+		}
+		#content-4 div:nth-child(2) > div:nth-child(4){
+			font-family: RobotoRegular;
+			font-size: 14px;
+			color: #b7b7b7;
+		}
+		#content-4 > div:nth-child(3){
+			display: none;
+		}
+@media only screen and (max-width: 1200px){
+	#content-4{
+		margin-top: 275px;
+	}
+	#content-4 > div:nth-child(2){
+		display: none;
+		height: auto;
+		width: 434px;
+	}
+	#content-4 > div:nth-child(3){
+		position: absolute;
+		top: -310px;
+		left: 50%;
+		margin-left: -217px;
+		text-align: center;
+		display: block;
+	}
+	#content-4 div:nth-child(3) > div{
+		margin: 12px 0 12px 0;
+	}
+	#content-4 div:nth-child(3) > div:nth-child(1){
+			font-family: RobotoRegular;
+			font-size: 27px;
+			color: black;
+		}
+		#content-4 div:nth-child(3) > div:nth-child(2){
+			font-family: RobotoRegular;
+			font-size: 25px;
+			color: #616161;
+		}
+		#content-4 div:nth-child(3) > div:nth-child(3){
+			font-family: RobotoRegular;
+			font-size: 25px;
+			color: #616161;
+		}
+		#content-4 div:nth-child(3) > div:nth-child(4){
+			font-family: RobotoRegular;
+			font-size: 25px;
+			color: #616161;
+		}
+}
+/*
+######################################################################
+######################################################################
+##                           /Content-4                             ##
+######################################################################
+######################################################################
+*/
+/*
+######################################################################
+######################################################################
+##                           Footer                                 ##
+######################################################################
+######################################################################
+*/
+footer{
+	height: 236px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	footer > div{
+		height: 92px;
+		width: 650px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		
+	}
+		footer > div > nav{
+			width: 650px;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+			footer > div > nav > a{
+				font-family: RobotoRegular;
+				font-size: 15px;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #161515;
+				padding-bottom: 3px;
+				border-bottom: 2px solid white;
+			}
+			footer > div > nav > a:hover{
+				border-bottom: 2px solid black;
+				transition: all 0.25s;
+			}
+		footer > div > div:nth-child(2){
+			height: 29px;
+			width: 104px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+			footer > div > div:nth-child(2) > a:nth-child(1){
+				height: 29px;
+				width: 29px;
+				display: block;
+				background-image: url(../img/footer/icons.png);
+				background-position: 0px 0px;
+			}
+			footer > div > div:nth-child(2) > a:nth-child(2){
+				height: 29px;
+				width: 29px;
+				display: block;
+				background-image: url(../img/footer/icons.png);
+				background-position: -37px 0px;
+			}
+			footer > div > div:nth-child(2) > a:nth-child(3){
+				height: 29px;
+				width: 29px;
+				display: block;
+				background-image: url(../img/footer/icons.png);
+				background-position: 29px 0px;
+			}
+/*
+######################################################################
+######################################################################
+##                           /Footer                                ##
+######################################################################
+######################################################################
+*/
