@@ -1,0 +1,223 @@
+body{
+	margin: 25px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#main{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	height: auto;
+	width: 1400px;
+}
+	/*############################################################*/
+	header{
+		height: 67px;
+		width: 1099px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+		#logo{
+			background-image: url(../img/logo.png);
+			height: 69px;
+			width: 190px;
+		}
+		header > nav{
+			height: 21px;
+			width: 729px;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 8px;
+			font-size: 16px;
+		}
+			header > nav > a{
+				text-decoration: none;
+				color: #c2c2c2;
+				font-family: 'Open Sans', sans-serif;
+			}
+			header > nav > a:nth-child(2){
+				color: #404040;
+			}
+			header > nav > a:hover{
+				color: #404040;
+				transition: color 0.25s;
+			}
+	/*############################################################*/
+		#clouds > div:nth-child(1){
+			height: 38px;
+			width: 88px;
+			background-image: url(../img/cloud1.png);
+			position: absolute;
+			top: 68px;
+			left: 395px;
+		}
+		#clouds > div:nth-child(2){
+			height: 40px;
+			width: 98px;
+			background-image: url(../img/cloud2.png);
+			position: absolute;
+			top: 309px;
+			left: 105px;
+		}
+		#clouds > div:nth-child(3){
+			height: 40px;
+			width: 100px;
+			background-image: url(../img/cloud3.png);
+			position: absolute;
+			top: 168px;
+			right: 120px;
+		}
+		#clouds > div:nth-child(4){
+			height: 59px;
+			width: 138px;
+			background-image: url(../img/cloud4-5.png);
+			position: absolute;
+			top: 515px;
+			right: -69px;
+		}
+		#clouds > div:nth-child(5){
+			height: 59px;
+			width: 138px;
+			background-image: url(../img/cloud4-5.png);
+			position: absolute;
+			top: 690px;
+			left: 90px;
+		}
+		#clouds > div:nth-child(6){
+			height: 47px;
+			width: 112px;
+			background-image: url(../img/cloud6.png);
+			position: absolute;
+			top: 665px;
+			right: 275px;
+		}
+	/*############################################################*/
+	#subjects{
+		height: 25px;
+		width: 613px;
+		display: flex;
+		font-family: 'Open Sans', sans-serif; 
+		margin: 63px 250px 0 0;
+	}
+		#subjects > div{
+			color: #404040;
+			margin: -4px 64px 0 0;
+		}
+		#subjects > nav{
+			height: auto;
+			width: 354px;
+			display: flex;
+			justify-content: space-between;
+			z-index: 1;
+		}
+			#subjects nav > a{
+				text-decoration: none;
+				font-size: 16px;
+				color: #545454;
+				padding: 0 10px 0 10px;
+			}
+			#subjects nav > a:hover{
+				border-bottom: 1px solid #00aeef;
+			}
+	/*############################################################*/
+	#line{
+		height: 1px;
+		width: 1400px;
+		background: #ebebeb;
+		position: absolute;
+		top: 154px;
+		z-index: 0;
+	}
+	/*############################################################*/
+	#carousel{
+		margin: 48px 0 0 0;
+		height: 482px;
+		width: 1099px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#content-carousel{
+			width: 876px;
+			display: flex;
+			justify-content: space-between;
+		}
+			#content-carousel > img:nth-child(1){
+				height: 381px;
+				width: 255px;
+				margin: 17px 0 0 0;
+			}
+			#content-carousel > img:nth-child(2){
+				height: 482px;
+				width: 273px;
+			}
+			#content-carousel > img:nth-child(3){
+				height: 381px;
+				width: 240px;
+				margin: 17px 0 0 0;
+			}
+		#bracket-left{
+			background-image: url(../img/bracket-left.png);
+		}
+		#bracket-right{
+			background-image: url(../img/bracket-right.png);
+		}
+		#carousel > div:nth-child(2n+1){
+			height: 47px;
+			width: 16px;
+			cursor: pointer;
+			margin: 185px 0 0 0;
+		}
+	/*############################################################*/
+	#operator-beeline{
+		width: 175px;
+		height: 69px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 25px 0 0 0;
+		box-shadow: 1px 1px 20px rgba(0,0,0,0.25);
+	}
+		#operator-beeline > img{
+			height: 43px;
+			width: 60px;
+		}
+		#line-2{
+			height: 49px;
+			width: 1px;
+			background: #e1e1e1;
+		}
+		#operator-beeline > div:nth-child(3){
+			font-family: 'Open Sans', sans-serif;
+			font-size: 22px;
+			font-weight: bold;
+		}
+			div:nth-child(3) > i{
+				font-size: 19px;
+			}
+	/*############################################################*/
+	footer{
+		height: 40px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #363636;
+		margin: 32px 0 0 0;
+		font-family: 'Open Sans', sans-serif;
+		color: #f0f0f0;
+		font-size: 18px;
+	}
+		footer > div{
+			width: 898px;
+			display: flex;
+			justify-content: space-between;
+		}
+				footer > div > div > i{
+					font-size: 24px !important;
+					margin: 0 5px 0 0;
+				}
