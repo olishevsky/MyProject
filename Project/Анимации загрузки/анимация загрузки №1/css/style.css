@@ -1,0 +1,70 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 900px;
+}
+#animation{
+	margin:50px;
+	height: 100px;
+	width: 100px;
+	animation: anim 0.65s infinite linear;
+}
+	#animation > div:nth-child(1){
+		height: 30px;
+		width: 30px;
+		border-radius: 15px;
+		background: gray;
+		position: relative;
+		top: 0px;
+		left: 50px;
+		margin-left: -12px;
+	}
+	#animation > div:nth-child(2){
+		height: 26px;
+		width: 26px;
+		border-radius: 13px;
+		background: gray;
+		position: relative;
+		top: -12px;
+		left: 18%;
+		margin-left: -8px;
+	}
+	#animation > div:nth-child(3){
+		height: 22px;
+		width: 22px;
+		border-radius: 11px;
+		background: gray;
+		position: relative;
+		top: -8px;
+		left: 15%;
+		margin-left: -10px;
+	}
+	#animation > div:nth-child(4){
+		height: 18px;
+		width: 18px;
+		border-radius: 9px;
+		background: gray;
+		position: relative;
+		top: -6px;
+		left: 28%;
+		margin-left: -10px;
+	}
+	#animation > div:nth-child(5){
+		height: 14px;
+		width: 14px;
+		border-radius: 9px;
+		background: gray;
+		position: relative;
+		top: -10px;
+		left: 50%;
+		margin-left: -10px;
+	}
+@keyframes anim{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
