@@ -1,0 +1,45 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 900px;
+	background: gray;
+}
+#animation{
+	height: 100px;
+	width: 100px;
+	animation: anim 1.25s infinite linear;
+	border: 3px solid transparent;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 3px solid green;
+}
+	#animation > div{
+		height: 80px;
+		width: 80px;
+		animation: anim 1s infinite linear;
+		border: 3px solid transparent;
+		border-radius: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top: 3px solid blue;
+	}
+		#animation > div > div{
+			height: 60px;
+			width: 60px;
+			animation: anim 0.75s infinite linear;
+			border: 3px solid transparent;
+			border-radius: 30px;
+			border-top: 3px solid red;
+		}
+@keyframes anim{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
