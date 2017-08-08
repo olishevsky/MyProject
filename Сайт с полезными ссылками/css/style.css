@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	background: #4a4a59;
+}
+h2{
+	text-align: center;
+	font-size: 28px;
+}
+h3{
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+#main{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: arial;
+	padding-top: 80px;
+}
+#head{
+	height: 39px;
+	width: 100%;
+	background: #2a2a2b;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+		#head > nav > a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 25px;
+			text-transform: capitalize;
+			padding: 5px 10px;
+			display: inline-block;
+			transition: color, background 0.25s;
+		}
+		#head > nav > a:hover{
+			background: #fff;
+			color: black;
+		}
+/*##############################################################*/
+#content{
+	height: auto;
+	width: 1100px;
+	padding: 25px 25px;
+	background: #fff;
+}
+	.div-a{
+		display: flex;
+		flex-direction: column;
+	}
+		.div-a > a{
+			color: #3b74ce;
+			font-size: 18px;
+			margin: 2px 0 2px 10px;
+			transition: color 0.25s;
+		}
+		.div-a > a:hover{
+			color: #562f91;
+		}
+/*##############################################################*/
+#footer{
+	height: 35px;
+	width: 100%;
+	background: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+	#footer > footer{
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+		margin-top: 7px;
+	}
+	
+	
