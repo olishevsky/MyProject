@@ -25,9 +25,6 @@ h3 {
 #head > nav > a:hover {
   border-bottom: solid 2px black; }
 
-#head > nav > a:first-child {
-  border-bottom: solid 2px black; }
-
 #content {
   height: auto;
   width: 100%;
