@@ -1,17 +1,17 @@
 ﻿@font-face {
-	font-family: bebasNeueRegular;
+	font-family: "bebasNeueRegular";
     src: url(../fonts/bebas_neue_regular.otf);
 }
 @font-face {
-	font-family: openSans;
+	font-family: "openSans";
     src: url(../fonts/open_sans.ttf);
 }
 @font-face {
-	font-family: openSansBold;
+	font-family: "openSansBold";
     src: url(../fonts/open_sans_bold.ttf);
 }
 @font-face {
-	font-family: bebasNeueBold;
+	font-family: "bebasNeueBold";
     src: url(../fonts/bebas_neue_bold.ttf);
 }
 body{
@@ -186,4 +186,97 @@ body{
 	background-image: url(../img/sprite.png);
 	background-position: -287px -37px;
 	margin-top: 185px;
+}
+/*#######################################
+				content-1
+#######################################*/
+#content-1{
+	width: 1299px;
+	height: 611px;
+	background-image: url(../img/background.png);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+#content-1-block-1{
+	width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin: 22px;
+}
+#content-1-img-1{
+	height: 201px;
+	width: 255px;
+	background-image: url(../img/sprite-2.png);
+	background-position: 0 0;
+}
+#content-1-img-2{
+	height: 170px;
+	width: 255px;
+	background-image: url(../img/sprite-2.png);
+	background-position: -258px -30px;
+}
+#content-1-img-3{
+	height: 201px;
+	width: 255px;
+	background-image: url(../img/sprite-2.png);
+	background-position: -516px 0;
+}
+#content-1-img-4{
+	height: 170px;
+	width: 255px;
+	background-image: url(../img/sprite-2.png);
+	background-position: 0px -212px;
+}
+#img-face{
+	height: 145px;
+	width: 145px;
+	background-image: url(../img/sprite-2.png);
+	background-position: -787px -43px;
+	position: absolute;
+	top: 310px;
+	left: 305px;
+}
+#content-1-block-1-2{
+	position: absolute;
+	top: 332px;
+	left: 498px;
+}
+#content-1-text-1{
+	font-family: bebasNeueBold;
+	letter-spacing: 1.3px;
+	font-size: 48px;
+	color: #000000;
+}
+.ontent-1-text{
+	font-family: openSans;
+	font-size: 18px;
+	color: #000000;
+
+}
+#content-1-text-3{
+	width: 565px;
+	margin-top: 42px;
+	position: relative;
+}
+#left-quotation-mark{
+	height: 38px;
+	width: 23px;
+	background-image: url(../img/sprite.png);
+	background-position: -253px -149px;
+	position: absolute;
+	left: -36px;
+	top: 110px;
+}
+#right-quotation-mark{
+	height: 38px;
+	width: 23px;
+	background-image: url(../img/sprite.png);
+	background-position: -254px -149px;
+	background-position: -287px -149px;
+	position: absolute;
+	right: 5px;
+	top: 165px;
 }
