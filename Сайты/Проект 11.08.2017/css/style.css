@@ -181,11 +181,21 @@ body{
 	margin-top: 28px;
 }
 #mouse-scroll{
+	margin-top: 185px;
+	display: flex;
+}
+#img-mause{
 	height: 59px;
 	width: 35px;
 	background-image: url(../img/sprite.png);
 	background-position: -287px -37px;
-	margin-top: 185px;
+}
+#mause-text{
+	width: 50px;
+	font-family: openSans;
+	font-size: 10px;
+	color: #fff;
+	margin: 5px 10px;
 }
 /*#######################################
 				content-1
@@ -204,6 +214,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	flex-wrap: wrap;
 	margin: 22px;
 }
 #content-1-img-1{
@@ -280,3 +291,103 @@ body{
 	right: 5px;
 	top: 165px;
 }
+/*#######################################
+				content-2
+#######################################*/
+#content-2{
+	width: 1299px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#content-2-text-1{
+	font-family: bebasNeueBold;
+	letter-spacing: 1.3px;
+	font-size: 72px;
+	color: #000000;
+	margin-top: 110px;
+}
+#content-2-text-2{
+	font-family: openSans;
+	font-size: 24px;
+	color: #000000;
+	margin: 10px 0 45px;
+}
+#content-2-block-1{
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.content-2-block-1-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content-2-block-1-1 > a{
+	width: 290px;
+	font-family: openSans;
+	font-size: 18px;
+	text-align: center;
+}
+.content-2-date{
+	font-family: bebasNeueRegular;
+	font-size: 18px;
+	color: #000000;
+	margin: 10px 0 30px;
+}
+.content-2-block-1-1:nth-child(4) > a{
+	width: 470px;
+}
+.content-2-block-1-1:last-child > a{
+	width: 470px;
+}
+/*#######################################
+				content-3
+#######################################*/
+#content-3{
+	height: 270px;
+	width: 1299px;
+	position: relative;
+	margin-top: 80px;
+}
+#content-3-block-1{
+	width: 1100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 50px 0 0 80px;
+}
+#content-3-background{
+	height: 200px;
+	background: #f2f2f2;
+}
+#content-3-background-2{
+	height: 266px;
+	width: 302px;
+	background-image: url(../img/background-2.png);
+	position: absolute;
+	right: 0;
+	bottom: 70px;
+	z-index: 0;
+}
+#content-3-block-1{
+	display: flex;
+}
+
+#content-3-block-1 > div{
+	width: 250px;
+	z-index: 1;
+}
+.content-3-date{
+	font-family: bebasNeueRegular;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+#content-3-block-1 > div > a{
+	font-family: openSans;
+	font-size: 14px;
+	color: #000000;
+}
+
