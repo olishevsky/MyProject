@@ -534,3 +534,65 @@ body{
 	background: #5c3a09;
 	color: #ffb446;
 }
+/*#######################################
+				footer
+#######################################*/
+#footer{
+	height: 175px;
+	width: 1299px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#logo2{
+	height: 57px;
+	width: 183px;
+	background: url(../img/sprite.png) no-repeat;
+	background-position: 0 -59px;
+	margin-top: 25px;
+}
+footer{
+	margin-top: 32px;
+	font-family: openSans;
+	font-size: 18px;
+	color: #cccccc;
+}
+#footer > table{
+	width: 380px;
+}
+#footer > table a{
+	font-family: bebasNeueRegular;
+	font-size: 18px;
+	color: #0d13e6;
+}
+#icons-2{
+	height: 65px;
+}
+#icons-2 > a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 0 2px;
+	transition: color .25s;
+}
+#icons-2 > a:hover{
+	color: #f00684;
+}
+#footer-info{
+
+}
+.footer-info-phone{
+	font-family: openSansBold;
+	font-size: 22px;
+	color: #000000;
+}
+#footer-info > div:nth-child(2){
+	margin-left: 13px;
+}
+#footer-info > a{
+	font-family: bebasNeueRegular;
+	font-size: 18px;
+	color: #ff0000;
+	margin: 5px 0 0 96px;
+}
