@@ -22,7 +22,7 @@ body{
 	justify-content: flex-start;
 	align-items: center;
 	margin: 0;
-	overflow-x: hidden;
+	
 }
 /*#######################################
 				head
@@ -246,6 +246,9 @@ body{
 	}
 	#icons{
 		right: 15px;
+	}
+	#head-block3{
+		width: auto;
 	}
 }
 @media only screen and (max-width: 650px){
@@ -499,6 +502,11 @@ body{
 		margin-left: 85px;
 	}
 }
+@media only screen and (max-width: 400px){
+	#content-1-block-1 > div {
+    margin: 20px 0px;
+}
+}
 @media only screen and (max-width: 340px){
 	#content-1{
 		margin-top: 925px;
@@ -741,16 +749,45 @@ body{
 	background-position: -385px -67px;
 }
 #content-4-logo-4{
+	height: 26px;
+	width: 122px;
+	background-image: url(../img/sprite.png);
+	background-position: -382px -87px;
+}
+#content-4-logo-5{
 	height: 75px;
 	width: 95px;
 	background-image: url(../img/sprite.png);
 	background-position: -15px -125px;
 }
-#content-4-logo-5{
+#content-4-logo-6{
 	height: 26px;
 	width: 108px;
 	background-image: url(../img/sprite.png);
 	background-position: -130px -162px;
+}
+@media only screen and (max-width: 1299px){
+	#content-4{
+		width: 100%;
+	}
+	#content-4-block-1{
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	#content-4-block-1 > div{
+		margin: 10px 30px;
+	}
+}
+@media only screen and (max-width: 600px){
+	#content-4-title{
+		margin-top: 250px;
+	}
+}
+@media only screen and (max-width: 420px){
+	#content-4-title{
+		font-size: 42px;
+		margin-bottom: 40px;
+	}
 }
 /*#######################################
 				content-5
@@ -845,6 +882,21 @@ body{
 	background: #5c3a09;
 	color: #ffb446;
 }
+@media only screen and (max-width: 1299px){
+	#content-5{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 550px){
+	#content-5-text-1{
+		width: auto;
+	}
+}
+@media only screen and (max-width: 490px){
+	#email{
+		width: auto;
+	}
+}
 /*#######################################
 				footer
 #######################################*/
@@ -906,4 +958,32 @@ footer{
 	font-size: 18px;
 	color: #ff0000;
 	margin: 5px 0 0 96px;
+}
+@media only screen and (max-width: 1299px){
+	#footer{
+		height: 275px;
+		width: 100%;
+		flex-direction: column;
+		margin-bottom: 175px;
+		position: relative;
+	}
+	#footer> table{
+		margin-top: 50px;
+	}
+	#icons-2{
+		margin-top: 20px;
+	}
+	#icons-2 > a{
+		font-size: 26px;
+	}
+	#footer-info{
+		margin-top: -15px;
+	}
+	#footer-block-1{
+		position: absolute;
+		bottom: -150px;
+	}
+	#footer-info > a{
+		margin-left: 60px;
+	}
 }
