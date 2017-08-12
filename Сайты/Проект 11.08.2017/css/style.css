@@ -22,6 +22,7 @@ body{
 	justify-content: flex-start;
 	align-items: center;
 	margin: 0;
+	overflow-x: hidden;
 }
 /*#######################################
 				head
@@ -51,6 +52,7 @@ body{
 	top: 39px;
 	left: 100px;
 	cursor: pointer;
+	display: none;
 }
 #head-block1 > nav{
 	position: absolute;
@@ -201,6 +203,112 @@ body{
 	color: #fff;
 	margin: 5px 10px;
 }
+@media only screen and (max-width: 1120px){
+	#head{
+		width: 100%;
+	}
+	#head-block1 > nav{
+		display: none;
+	}
+	#logo1{
+		left: 70px;
+	}
+	#head-block1 > i{
+		left: 15px;
+		display: block;
+	}
+}
+@media only screen and (max-width: 1120px){
+	#head-block2 {
+		font-size: 72px;
+	}
+	#head-block3{
+		flex-direction: column;
+		align-items: center;
+	}
+	#head-block3-1-document{
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+	#red-logo{
+		margin-top: 30px;
+	}
+	#mouse-scroll{
+		margin-top: 70px;
+	}
+}
+@media only screen and (max-width: 900px){
+	#language{
+	right: 15px;
+	}
+	#phone{
+		right: 15px;
+	}
+	#icons{
+		right: 15px;
+	}
+}
+@media only screen and (max-width: 650px){
+	#head-block2 {
+		font-size: 42px;
+	}
+	#head-block3-1-text{
+		font-size: 14px;
+	}
+	#head-block3-1-text{
+		width: 260px;
+	}
+	.head-block3-2-text{
+		width: 200px;
+	}
+	#mouse-scroll{
+		margin-top: 35px;
+	}
+}
+@media only screen and (max-width: 470px){
+	#phone{
+		font-size: 14px;
+	}
+	#icons{
+		top: 70px;
+	}
+	#head-block2{
+		width: 300px;
+	}
+	#mouse-scroll{
+		display: none;
+	}
+}
+@media only screen and (max-width: 410px){
+	#logo1{
+		left: calc(60% - 91px);
+	}
+	#phone{
+		font-size: 22px;
+		top: 120px;
+		right: calc(50% - 85px);
+	}
+	#icons{
+		top: 160px;
+		right: calc(50% - 55px);
+	}
+	#icons > a{
+		font-size: 22px;
+	}
+	#head-block3-1-text{
+		font-size: 13px;
+	}
+	#head-block3-1-document > a{
+		width: 200px;
+	}
+	.head-block3-2-text {
+		font-size: 12px;
+		width: 150px;
+	}
+	#red-logo{
+		margin-top: 60px;
+	}
+}
 /*#######################################
 				content-1
 #######################################*/
@@ -293,6 +401,130 @@ body{
 	position: absolute;
 	right: 5px;
 	top: 165px;
+}
+@media only screen and (max-width: 1299px){
+	#content-1{
+		width: 100%;
+	}
+	#img-face{
+		left: calc(30% - 72px);
+	}
+	#content-1-block-1-2{
+		left: calc(68% - 282px);
+	}
+}
+@media only screen and (max-width: 1120px){
+	#content-1{
+		margin-top: 200px;
+	}
+	#content-1-block-1{
+		width: 100%;
+		margin-top: -200px;
+	}
+	#content-1-block-1 > div{
+		margin: 20px 80px;
+	}
+}
+@media only screen and (max-width: 1025px){
+	#content-1{
+		margin-top: 300px;
+	}
+	#content-1-block-1{
+		margin-top: -300px;
+	}
+	#img-face{
+		left: calc(50% - 72px);
+		top: 200px;
+	}
+	#content-1-block-1-2{
+		top: 360px;
+		left: calc(68% -282px);
+	}
+	#content-1-text-3{
+		margin-left: -110px;
+	}
+	#left-quotation-mark{
+		left: -145px;
+	}
+}
+@media only screen and (max-width: 1025px){
+	#content-1{
+		margin-top: 1000px;
+	}
+	#content-1-block-1{
+		margin: -950px 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items :center;
+	}
+	#content-1-block-1 > div{
+		display: flex;
+	}
+}
+@media only screen and (max-width: 775px){
+	#content-1-text-1, #content-1-text-2{
+		margin-left: 45px;
+	}
+}
+@media only screen and (max-width: 660px){
+	#content-1-text-3{
+		width: 250px;
+		left: 60%;
+	}
+	#left-quotation-mark{
+		left: 70px;
+	}
+	#right-quotation-mark{
+		right: 160px;
+		top: 290px;
+	}
+	#img-face{
+		top: 25px;
+	}
+	#content-1-block-1-2{
+		top: 190px;
+	}
+}
+@media only screen and (max-width: 660px){
+	#content-1-text-1{
+		margin-left: 85px;
+	}
+	#content-1-text-2{
+		margin-left: 85px;
+	}
+}
+@media only screen and (max-width: 340px){
+	#content-1{
+		margin-top: 925px;
+	}
+	#content-1-block-1{
+		margin: -875px 0 0;
+	}
+	#content-1-text-1{
+		font-size: 32px;
+		padding-left: 50px;
+	}
+	#content-1-text-2{
+		font-size: 14px;
+		padding-left: 50px;
+	}
+	#content-1-text-3{
+		width: 200px;
+		font-size: 13px;
+		margin-left: -50px;
+	}
+	#left-quotation-mark{
+		display: none;
+	}
+	#right-quotation-mark{
+		display: none;
+	}
+	#img-face{
+		top: 100px;
+	}
+	#content-1-block-1-2{
+		top: 280px;
+	}
 }
 /*#######################################
 				content-2
