@@ -285,7 +285,6 @@ body{
 	height: 38px;
 	width: 23px;
 	background-image: url(../img/sprite.png);
-	background-position: -254px -149px;
 	background-position: -287px -149px;
 	position: absolute;
 	right: 5px;
@@ -390,4 +389,51 @@ body{
 	font-size: 14px;
 	color: #000000;
 }
-
+/*#######################################
+				content-4
+#######################################*/
+#content-4{
+	width: 1299px;
+}
+#content-4-title{
+	font-family: bebasNeueBold;
+	font-size: 72px;
+	text-align: center;
+	margin: 60px 0 90px;
+}
+#content-4-block-1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 54px;
+}
+#content-4-logo-1{
+	height: 25px;
+	width: 122px;
+	background-image: url(../img/sprite.png);
+	background-position: -382px -4px;
+}
+#content-4-logo-2{
+	height: 15px;
+	width: 122px;
+	background-image: url(../img/sprite.png);
+	background-position: -391px -42px;
+}
+#content-4-logo-3{
+	height: 13px;
+	width: 119px;
+	background-image: url(../img/sprite.png);
+	background-position: -385px -67px;
+}
+#content-4-logo-4{
+	height: 75px;
+	width: 95px;
+	background-image: url(../img/sprite.png);
+	background-position: -15px -125px;
+}
+#content-4-logo-5{
+	height: 26px;
+	width: 108px;
+	background-image: url(../img/sprite.png);
+	background-position: -130px -162px;
+}
