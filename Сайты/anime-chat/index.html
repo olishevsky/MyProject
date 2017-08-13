@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Роливой чат</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+	<div id="loading">
+		<div id="loading-left"></div>
+		<div id="animation-position">
+			<div id="animation">
+				<div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<div id="loading-right"></div>
+	</div>
+	<div id="welcome" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+		<h2>Visual Role Play</h2>
+		<p>Добро пожаловать. Этот сайт предназначен для людей любящих Role Play и аниме. Если вы среди этого числа людей продолжайте читать вы будите приятно удивлены.</p>
+		<p>Перед вами <b>Visual Role Play</b> - это что-то похожее на <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD">Визуальную новеллу</a> и чат. Как это работает - вы выбираете персонажа, после чего подключаетесь к человеку с которым будете ролить. Данный человек видет вашего персонажа, а вы видите его персонажа.</p>
+		<p> А теперь более подробно о том как это работает. Перед вами появляется диалоговое окно где вы можете написать сообщение, которое прочтет ваш собеседник, так же вы выбираете эмоцию какую изобразит ваш персонаж при появлянии собщения у вашего собеседника.</p>
+		<p>Помимо этого всего вы можете выбрать место действия(локацию). Это может быть дом, улица, школа, больница и многое другое.</p>
+		<p>Если после прочитанного вы заинтересовались <b>Visual Role Play</b>, вы можете опробовать ее прямо сейчас.</p>
+		<button id="begin" class="button-begin">Начать сейчас</button>
+	</div>
+	<div id="menu">
+		<h3>Выберите пол</h3>
+		<div id="menu-sex" class="menu-1">
+			<label><input type="radio" name="sex" value="1" checked><div id="gerl" class="sex"></div></label>
+			<label><input type="radio" name="sex" value="2"><div id="boy" class="sex"></div></label>
+		</div>
+		<h3>Выберите персонажа</h3>
+		<div id="menu-gerl" class="menu-1">
+			<label><input type="radio" name="gerl"><div id="gerl" class="sex"></div></label>
+			<label><input type="radio" name="gerl"><div id="gerl-2" class="sex"></div></label>
+		</div>
+		<div id="menu-boy" class="menu-1">
+			<label><input type="radio" name="boy"><div id="boy" class="sex"></div></label>
+			<label><input type="radio" name="boy"><div id="boy-2" class="sex"></div></label>
+		</div>
+		<button id="begin-2"  class="button-begin">Выбрать</button>
+	</div>
+	<script type="text/javascript" src="script/script.js"></script>
+	<script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="script/wow.min.js"></script>
+	
+</body>
+</html>
