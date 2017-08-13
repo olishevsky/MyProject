@@ -24,11 +24,11 @@ h3{
 }
 #loading > div:first-child{
 	left: 0;
-	transition: all 5s;
+	transition: left .6s;
 }
 #loading > div:last-child{
 	right: 0;
-	transition: all 5s;
+	transition: right .6s;
 }
 #animation-position{
 	position: absolute;
@@ -146,4 +146,16 @@ h3{
 
 .menu-1 > label > input:checked + .sex{
 	border: 2px solid #FF7F00;
+}
+#сharacter-description{
+	height: 442px;
+	width: 300px;
+	padding: 20px 20px 40px;
+	background: #fff;
+	position: absolute;
+	left: 300px;
+	top: 0;
+	display: none;
+	opacity: 0;
+	transition: opacity .25s;
 }
