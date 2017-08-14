@@ -89,6 +89,6 @@ begin2.onclick = function(){
 		loadingLeft.style.left = "0";
 	}, 500);
 	setTimeout(function(){
-		document.location.href = "404.html";
+		document.location.href = "lobby.html";
 	}, 1500);
 }
