@@ -21,7 +21,7 @@
 	<div id="hero"></div>
 	<div id="dialog-window">
 		<div id="dialog-window-message">
-			Вы встретились случайно.
+			Никого нет и вы заскучали...
 		</div>
 		<i id="logs" class="fa fa-comments-o icons-dialog" aria-hidden="true"></i>
 		<textarea id="text-dialog"></textarea>
@@ -35,22 +35,54 @@
 	<script type="text/javascript" src="script/lobby.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
 	<script>
+		var girls = ['url(img/hero/girls/girl.png)','url(img/hero/girls/girl-2.png)'];
+		var girlsHeight = [850,551];
+		var girlsWidth  = [499,459];
+		var boys = ['url(img/hero/girls/boy.png)'];
+		var boysHeight = [552];
+		var boysWidth  = [362];
+		var hero = document.getElementById('hero');
+		hero.style.left = "calc(50% - 250px)";
 		function getCookie(name) {
 			var r = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
 			if (r) return r[2];
 			else return "";
 		}
 		var socket = io('http://localhost:3000/');
-		
+			nameHero = getCookie("nameHero");
+			dialogWindow = document.querySelector('#dialog-window-message');
+			socket.emit('hero', nameHero);
+			socket.on('hero', function(nameHeroInterlocutor){
+				dialogWindow.textContent = "Вы прогуливались и случайно наткнулись на персонажа: " + nameHeroInterlocutor;
+				switch(nameHeroInterlocutor) {
+				case "Мику":
+					hero.style.backgroundImage = girls[0];
+					hero.style.height = girlsHeight[0] + "px";
+					hero.style.width = girlsWidth[0] + "px";
+					break;
+				case "Акамэ":
+					hero.style.backgroundImage = girls[1];
+					hero.style.height = girlsHeight[1] + "px";
+					hero.style.width = girlsWidth[1] + "px";
+					break;
+				case "Саске":
+					hero.style.backgroundImage = boys[0];
+					hero.style.height = boysHeight[0] + "px";
+					hero.style.width = boysWidth[0] + "px";
+					break;
+				}
+				hero.style.display = "block";
+				setTimeout(function(){
+					hero.style.opacity = "1";
+				},4);
+			})
 		document.querySelector('#answer-button')
 			.addEventListener('click', ev => {
 				ev.preventDefault();
 				let text = document.querySelector('#text-dialog').value;
-				nameHero = getCookie("nameHero");
 				socket.emit('message', text, nameHero);
 			})
-			socket.on('message', function(data, nameHero){
-				dialogWindow = document.querySelector('#dialog-window-message');
+			socket.on('message', function(data){
 				dialogWindow.textContent = data;
 				let p = document.createElement('p');
 				p.textContent = data;

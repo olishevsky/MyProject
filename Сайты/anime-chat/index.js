@@ -19,6 +19,9 @@ io.on('connection', function(socket){
 	socket.on('message', function(data, nameHero) {
 		io.emit('message', nameHero + ": " + data);
 	})
+	socket.on('hero', function(nameHero) {
+		socket.broadcast.emit('hero', nameHero);
+	})
 });
 
 //Веб-сокет

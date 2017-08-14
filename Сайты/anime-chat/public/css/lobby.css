@@ -72,6 +72,9 @@
 #hero{
 	position: absolute;
 	bottom: 0;
+	display: none;
+	opacity: 0;
+	transition: opacity 1s;
 }
 #dialog-window{
 	height: 120px;

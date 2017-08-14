@@ -22,14 +22,6 @@ function getRandomInt(min, max){
 }
 body.style.backgroundImage = background[getRandomInt(0,3)];
 //					hero
-var girls = ['url(img/hero/girls/girl.png)'];
-var girlsHeight = [850];
-var girlsWidth  = [499];
-var hero = document.getElementById('hero');
-hero.style.height = girlsHeight[0] + "px";
-hero.style.width = girlsWidth[0] + "px";
-hero.style.left = "calc(50% - 250px)";
-hero.style.backgroundImage = girls[0];
 var answer = document.getElementById('answer');
 var read = document.getElementById('read');
 var dialogWindowMessage = document.getElementById('dialog-window-message');
