@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ролевой чат</title>
+	<link rel="stylesheet" type="text/css" href="/css/lobby.css">
+	<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="loading">
+		<div id="loading-left"></div>
+		<div id="animation-position">
+			<div id="animation">
+				<div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<div id="loading-right"></div>
+	</div>
+	<div id="background"></div>
+	<div id="hero"></div>
+	<div id="dialog-window">
+		<div id="dialog-window-message">
+			Вы встретились случайно.
+		</div>
+		<i id="logs" class="fa fa-comments-o icons-dialog" aria-hidden="true"></i>
+		<textarea id="text-dialog"></textarea>
+		<button id="answer-button">Отправить</button>
+		<i id="answer" class="fa fa-commenting-o icons-dialog" aria-hidden="true"></i>
+		<i id="read"  class="fa fa-eye icons-dialog" aria-hidden="true"></i>
+	</div>
+	<div id="log-window" class="log-window">
+		
+	</div>
+	<script type="text/javascript" src="script/lobby.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		function getCookie(name) {
+			var r = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+			if (r) return r[2];
+			else return "";
+		}
+		var socket = io('http://localhost:3000/');
+		
+		document.querySelector('#answer-button')
+			.addEventListener('click', ev => {
+				ev.preventDefault();
+				let text = document.querySelector('#text-dialog').value;
+				nameHero = getCookie("nameHero");
+				socket.emit('message', text, nameHero);
+			})
+			socket.on('message', function(data, nameHero){
+				dialogWindow = document.querySelector('#dialog-window-message');
+				dialogWindow.textContent = data;
+				let p = document.createElement('p');
+				p.textContent = data;
+				p.classList.add('log-window-p');
+				document.querySelector('#log-window').appendChild(p);
+			})
+	</script>
+</body>
+</html>
