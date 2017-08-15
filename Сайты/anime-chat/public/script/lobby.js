@@ -59,4 +59,71 @@ logs.onclick = function(){
 		logWindow.style.display = "none";
 	}
 }
-
+// socket
+var girls = ['url(img/hero/girls/girl.png)','url(img/hero/girls/girl-2.png)'];
+		var girlsHeight = [850,551];
+		var girlsWidth  = [499,459];
+		var boys = ['url(img/hero/girls/boy.png)'];
+		var boysHeight = [552];
+		var boysWidth  = [362];
+		var hero = document.getElementById('hero');
+		hero.style.left = "calc(50% - 250px)";
+		function getCookie(name) {
+			var r = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+			if (r) return r[2];
+			else return "";
+		}
+		var socket = io('62.109.26.229:3001');
+		userCookie = getCookie("userId");
+		nameHero = getCookie("nameHero");
+		socket.emit('userConnetion', userCookie, nameHero);
+		socket.on('userRoom', function(userRoom){
+			document.cookie = "userRoom="+ userRoom;
+		})
+			dialogWindow = document.querySelector('#dialog-window-message');
+			roomUser = getCookie("userRoom");
+			socket.on('heroStart', function(){
+				socket.emit('hero', userCookie, roomUser);
+			})
+			socket.on('hero', function(nameHeroInterlocutor){
+				dialogWindow.textContent = "Вы прогуливались и случайно наткнулись на персонажа: " + nameHeroInterlocutor;
+				switch(nameHeroInterlocutor) {
+				case "Мику":
+					hero.style.backgroundImage = girls[0];
+					hero.style.height = girlsHeight[0] + "px";
+					hero.style.width = girlsWidth[0] + "px";
+					break;
+				case "Акамэ":
+					hero.style.backgroundImage = girls[1];
+					hero.style.height = girlsHeight[1] + "px";
+					hero.style.width = girlsWidth[1] + "px";
+					break;
+				case "Саске":
+					hero.style.backgroundImage = boys[0];
+					hero.style.height = boysHeight[0] + "px";
+					hero.style.width = boysWidth[0] + "px";
+					break;
+				}
+				hero.style.display = "block";
+				setTimeout(function(){
+					hero.style.opacity = "1";
+				},4);
+			})
+			document.querySelector('#answer-button')
+			.addEventListener('click', ev => {
+				if(textDialog.value != "" && textDialog.value != " " && textDialog.value != "  " && textDialog.value != "  " && textDialog.value != "  "){
+				ev.preventDefault();
+				let text = document.querySelector('#text-dialog').value;
+				roomUser = getCookie("userRoom");
+				socket.emit('message', text, nameHero, roomUser);
+				}
+			})
+			socket.on('message', function(data){
+				dialogWindow.textContent = data;
+				let p = document.createElement('p');
+				p.textContent = data;
+				p.classList.add('log-window-p');
+				document.querySelector('#log-window').appendChild(p);
+				var textDialog = document.getElementById('text-dialog');
+				textDialog.value = "";
+			})

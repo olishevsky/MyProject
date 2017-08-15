@@ -93,4 +93,9 @@ begin2.onclick = function(){
 	}, 1500);
 	nameHero = сharacterDescriptionH.innerHTML;
 	document.cookie = "nameHero="+ nameHero;
+	var newDate = Date.parse(new Date());
+	function getRandomArbitrary(min, max) {
+	  return Math.random() * (max - min) + min;
+	}
+	document.cookie = "userId=" + getRandomArbitrary(0, 999999) + nameHero + newDate;
 }
