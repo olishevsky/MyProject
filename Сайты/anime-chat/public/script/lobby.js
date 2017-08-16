@@ -28,10 +28,6 @@ if(testCookie != "true"){
 	var background = ['url(img/background/background-2.jpg)',
 	'url(img/background/background-3.jpg)','url(img/background/background-4.jpg)',
 	'url(img/background/background-5.jpg)'];
-	function getRandomInt(min, max){
-	return Math.floor(Math.random() * (max - min + 1)) + min;
-	}
-	body.style.backgroundImage = background[getRandomInt(0,3)];
 	//					hero
 	var answer = document.getElementById('answer');
 	var read = document.getElementById('read');
@@ -78,6 +74,9 @@ if(testCookie != "true"){
 		socket.emit('userConnetion', userCookie, nameHero);
 		socket.on('userRoom', function(userRoom){
 			document.cookie = "userRoom="+ userRoom;
+		})
+		socket.on('background', function(backgroundId){
+			body.style.backgroundImage = background[backgroundId];
 		})
 			dialogWindow = document.querySelector('#dialog-window-message');
 			roomUser = getCookie("userRoom");
