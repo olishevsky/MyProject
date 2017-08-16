@@ -1,8 +1,19 @@
-﻿var animationPosition = document.getElementById('animation-position');
-var loadingLeft = document.getElementById('loading-left');
-var loadingRight = document.getElementById('loading-right');
-var loading = document.getElementById('loading');
-window.onload= function(){
+﻿function getCookie(name) {
+		var r = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+		if (r) return r[2];
+		else return "";
+	}
+userCookie = getCookie("userId");
+testCookie = getCookie("testUser");
+if(testCookie != "true"){
+	
+	document.cookie = "testUser=true";
+	//getCookie("testUser");	
+	var animationPosition = document.getElementById('animation-position');
+	var loadingLeft = document.getElementById('loading-left');
+	var loadingRight = document.getElementById('loading-right');
+	var loading = document.getElementById('loading');
+	window.onload= function(){
 	setTimeout(function(){
 		loadingLeft.style.left = "-50%";
 		loadingRight.style.right = "-50%";
@@ -11,56 +22,49 @@ window.onload= function(){
 			loading.style.display = "none";
 		}, 900);
 	}, 500);
-}
-//					background
-var body = document.getElementsByTagName("BODY")[0];
-var background = ['url(img/background/background-2.jpg)',
-'url(img/background/background-3.jpg)','url(img/background/background-4.jpg)',
-'url(img/background/background-5.jpg)'];
-function getRandomInt(min, max){
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-body.style.backgroundImage = background[getRandomInt(0,3)];
-//					hero
-var answer = document.getElementById('answer');
-var read = document.getElementById('read');
-var dialogWindowMessage = document.getElementById('dialog-window-message');
-var textDialog = document.getElementById('text-dialog');
-var answerButton = document.getElementById('answer-button');
-answer.onclick = function(){
+	}
+	//					background
+	var body = document.getElementsByTagName("BODY")[0];
+	var background = ['url(img/background/background-2.jpg)',
+	'url(img/background/background-3.jpg)','url(img/background/background-4.jpg)',
+	'url(img/background/background-5.jpg)'];
+	function getRandomInt(min, max){
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+	body.style.backgroundImage = background[getRandomInt(0,3)];
+	//					hero
+	var answer = document.getElementById('answer');
+	var read = document.getElementById('read');
+	var dialogWindowMessage = document.getElementById('dialog-window-message');
+	var textDialog = document.getElementById('text-dialog');
+	var answerButton = document.getElementById('answer-button');
+	answer.onclick = function(){
 	answer.style.display = "none";
 	read.style.display = "block";
 	dialogWindowMessage.style.display = "none";
 	textDialog.style.display = "block";
 	answerButton.style.display = "block";
-}
-read.onclick = function(){
+	}
+	read.onclick = function(){
 	answer.style.display = "block";
 	read.style.display = "none";
 	dialogWindowMessage.style.display = "block";
 	textDialog.style.display = "none";
 	answerButton.style.display = "none";
-}
-answerButton = document.querySelector('#answer-button');
-answerButton.onclick = function(){
-	answer.style.display = "block";
-	read.style.display = "none";
-	dialogWindowMessage.style.display = "block";
-	textDialog.style.display = "none";
-	answerButton.style.display = "none";
-}
-logs = document.querySelector('#logs');
-logWindow = document.querySelector('#log-window');
-logs.onclick = function(){
+	}
+	answerButton = document.querySelector('#answer-button');
+	logs = document.querySelector('#logs');
+	logWindow = document.querySelector('#log-window');
+	logs.onclick = function(){
+	
 	if(logWindow.style.display != "block"){
 		logWindow.style.display = "block";
 	}
 	else{
 		logWindow.style.display = "none";
 	}
-}
-// socket
-var girls = ['url(img/hero/girls/girl.png)','url(img/hero/girls/girl-2.png)'];
+	}
+	var girls = ['url(img/hero/girls/girl.png)','url(img/hero/girls/girl-2.png)'];
 		var girlsHeight = [850,551];
 		var girlsWidth  = [499,459];
 		var boys = ['url(img/hero/girls/boy.png)'];
@@ -68,13 +72,8 @@ var girls = ['url(img/hero/girls/girl.png)','url(img/hero/girls/girl-2.png)'];
 		var boysWidth  = [362];
 		var hero = document.getElementById('hero');
 		hero.style.left = "calc(50% - 250px)";
-		function getCookie(name) {
-			var r = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
-			if (r) return r[2];
-			else return "";
-		}
-		var socket = io('62.109.26.229:3001');
-		userCookie = getCookie("userId");
+		// socket
+		var socket = io('127.0.0.1:3002');
 		nameHero = getCookie("nameHero");
 		socket.emit('userConnetion', userCookie, nameHero);
 		socket.on('userRoom', function(userRoom){
@@ -125,5 +124,42 @@ var girls = ['url(img/hero/girls/girl.png)','url(img/hero/girls/girl-2.png)'];
 				p.classList.add('log-window-p');
 				document.querySelector('#log-window').appendChild(p);
 				var textDialog = document.getElementById('text-dialog');
-				textDialog.value = "";
 			})
+		answerButton.onclick = function(){
+			answer.style.display = "block";
+			read.style.display = "none";
+			dialogWindowMessage.style.display = "block";
+			textDialog.style.display = "none";
+			answerButton.style.display = "none";
+			textDialog.value = "";
+		}
+		socket.on('liveRoom', function(){
+			document.cookie = "testUserLive=true";
+			hero.style.opacity = "0";
+				setTimeout(function(){
+					hero.style.display = "none";
+				},1000);
+			setTimeout(function(){
+				document.location.href = "/";
+			}, 5000);
+		})
+}
+else{
+	if(getCookie("testUserLive") == "true"){
+		document.location.href = "/";
+	}
+	else{
+		if(getCookie("testUserLive2") != "true"){
+			var socket = io('127.0.0.1:3002');
+			roomUser = getCookie("userRoom");
+			socket.emit('userDisconnection', userCookie, roomUser);
+			document.cookie = "testUserLive2=true";
+			setTimeout(function(){
+				document.location.href = "/";
+			}, 1000);
+		}
+		else{
+			document.location.href = "/";
+		}
+	}
+}

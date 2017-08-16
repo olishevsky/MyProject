@@ -4,6 +4,7 @@
 	<title>Ролевой чат</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css">
 	<meta content='width=device-width,initial-scale=0.5' name='viewport'>
 </head>
 <body>
@@ -50,8 +51,12 @@
 		<p id="сharacter-description-p1"></p>
 		<p id="сharacter-description-p2"></p>
 	</div>
-	<script type="text/javascript" src="script/script.js"></script>
+	<div id="info-div">
+		<i class="fa fa-user-o" aria-hidden="true"></i><div id="info-div-online">none online</div>
+	</div>
 	<script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
 	<script type="text/javascript" src="script/wow.min.js"></script>
 </body>
 </html>

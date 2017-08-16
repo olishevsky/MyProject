@@ -14,18 +14,20 @@ app.get('/', function (req, res) {
 
 app.use(require('express').static(__dirname + '/public'));
 
-http.listen(3001, function(){
-	console.log('listening on *:3000');
+http.listen(3002, function(){
+	console.log('listening on *:3002');
 });
 io.on('connection', function(socket){
 	
 	console.log('connected new client');
 	
+	socket.on('userOnline', function(){
+		socket.emit('userOnline', usersOnline);
+	})
+	
 	socket.on('userConnetion', function(userCookie, nameHero){
 		usersArray[usersOnline] = userCookie;
-		console.log(nameHero);
 		heroesArray[usersOnline] = nameHero;
-		console.log(heroesArray[usersOnline]);
 		usersOnline++;
 		if(usersOnline & 1){
 			if(usersOnline == 1){
@@ -54,15 +56,42 @@ io.on('connection', function(socket){
 		while(usersArray[i] != userCookie){
 			i++;
 		}
-		console.log(heroesArray[i]);
 		if(i & 1){
-			console.log(i);
 			socket.emit('hero', heroesArray[i - 1]);
 		}
 		else{
-			console.log(i);
 			socket.emit('hero', heroesArray[i + 1]);
 		}
+	})
+	
+	socket.on('userDisconnection', function(userCookie, roomUser){
+		var i = 0;
+		while(usersArray[i] != userCookie){
+			if(usersArray[i] != undefined){
+				break;
+			}
+			i++;
+		}
+		if(usersOnline & 1){
+			if(usersArray[i + 1] != undefined){
+				usersArray.splice(i + 1, i + 1);
+				heroesArray.splice(i + 1, i + 1);
+				usersOnline--;
+			}
+			usersArray.splice(i, i);
+			heroesArray.splice(i, i);
+			usersOnline--;
+		}
+		else{
+			usersArray.splice(i, i);
+			heroesArray.splice(i, i);
+			usersOnline--;
+			usersArray.splice(i - 1, i - 1);
+			heroesArray.splice(i - 1, i - 1);
+			usersOnline--;
+		}
+		io.to(roomUser).emit('message', "Ваш собеседник убежал. Вы будете возвращены в лоби через 5 секунд.");
+		io.to(roomUser).emit('liveRoom');
 	})
 });
 

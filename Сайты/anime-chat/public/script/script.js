@@ -1,4 +1,7 @@
-﻿var animationPosition = document.getElementById('animation-position');
+﻿document.cookie = "testUser=false";
+document.cookie = "testUserLive=false";
+document.cookie = "testUserLive2=false";
+var animationPosition = document.getElementById('animation-position');
 var loadingLeft = document.getElementById('loading-left');
 var loadingRight = document.getElementById('loading-right');
 var loading = document.getElementById('loading');
@@ -99,3 +102,9 @@ begin2.onclick = function(){
 	}
 	document.cookie = "userId=" + getRandomArbitrary(0, 999999) + nameHero + newDate;
 }
+var socket = io('127.0.0.1:3002');
+infoDivOnline = document.getElementById('info-div-online');
+socket.emit("userOnline");
+socket.on('userOnline', function(usersOnline){
+	infoDivOnline.innerHTML = usersOnline + " online";
+})
