@@ -5,6 +5,7 @@ var animationPosition = document.getElementById('animation-position');
 var loadingLeft = document.getElementById('loading-left');
 var loadingRight = document.getElementById('loading-right');
 var loading = document.getElementById('loading');
+var menuTest = false;
 window.onload= function(){
 	setTimeout(function(){
 		loadingLeft.style.left = "-50%";
@@ -48,59 +49,63 @@ menuSex.onclick = function(){
 	}
 }
 menuBoy.onclick = function(){
+		menuTest = true;
 		сharacterDescription.style.display = "block";
 		setTimeout(function(){
 			сharacterDescription.style.opacity = "1";
 		}, 4);
 	if(menuBoy.querySelector("input[type='radio'][name='boy']:checked").value == '1'){
-		сharacterDescriptionH.innerHTML = "Гоку";
-		сharacterDescriptionP1.innerHTML = "Гоку — главный герой вселенной Жемчуг дракона, созданной Акирой Ториямой; мальчик с обезьяньим хвостом.";
-		сharacterDescriptionP2.innerHTML = "Сон Гоку учится боевым искусствам. Характерной чертой его внешнего вида являются черные волосы, стоящие торчком. Он обладает сверхъестественной силой и, как выясняется по ходу истории, происходит от вымышленной внеземной расы сайянов. С помощью долгих тренировок он научился многим сильным приёмам, а также приобрёл сверхскорость[3], сверхбыстрые рефлексы, способность летать с помощью энергии ки и телепортироваться техникой Сюнкан Идо";
+		сharacterDescriptionH.innerHTML = "Кирито";
+		сharacterDescriptionP1.innerHTML = "Начал игру Sword Art Online в четырнадцатилетнем возрасте. Благодаря тому, что Кирито участвовал в бета-тестировании SAO, знанию уже пройденных им уровней Айнкрада, ему удалось получить начальное преимущество перед другими игроками в развитии навыков своего персонажа, а позднее, уже благодаря собственному уму и настойчивости, стать одним из наиболее высокоуровневых игроков.";
+		сharacterDescriptionP2.innerHTML = "В игре предпочитает действовать в одиночку, лишь изредка присоединяясь к партиям других игроков, например, для уничтожения боссов уровня. После встречи с рапиристкой Асуной, которая стала его возлюбленной, а позднее — женой, присоединяется к её игровой Гильдии — Рыцари Крови.";
 	}
 	if(menuBoy.querySelector("input[type='radio'][name='boy']:checked").value == '2'){
-		сharacterDescriptionH.innerHTML = "Саске";
-		сharacterDescriptionP1.innerHTML = "Учиха - шиноби Конохагакуре и один из последних живущих членов клана Учиха. После того, как его старший брат Итачи вырезал весь их клан, Саске поставил перед собой жизненную цель отомстить за клан и семью, убив самого Итачи.";
-		сharacterDescriptionP2.innerHTML = "Он попадает в Команду 7, когда становится ниндзя, и благодаря состязаниям со своим соперником и лучшим другом, Наруто Узумаки, начинает оттачивать свои навыки. Недовольный своим медленным прогрессом, он покидает Коноху, чтобы получить больше силы, необходимой для свершения его мести.";
+		сharacterDescriptionH.innerHTML = "Саске Учиха";
+		сharacterDescriptionP1.innerHTML = "Шиноби Конохагакуре и один из последних живущих членов клана Учиха. После того, как его старший брат Итачи вырезал весь их клан, Саске поставил перед собой жизненную цель отомстить за клан и семью, убив самого Итачи. Он попадает в Команду 7, когда становится ниндзя, и благодаря состязаниям со своим соперником и лучшим другом, Наруто Узумаки, начинает оттачивать свои навыки.";
+		сharacterDescriptionP2.innerHTML = "Недовольный своим медленным прогрессом, он покидает Коноху, чтобы получить больше силы, необходимой для свершения его мести...";
 	}
 }
 menuGerl.onclick = function(){
+	menuTest = true;
 	сharacterDescription.style.display = "block";
 	setTimeout(function(){
 		сharacterDescription.style.opacity = "1";
 	}, 4);
 	if(menuGerl.querySelector("input[type='radio'][name='gerl']:checked").value == '1'){
-		сharacterDescriptionH.innerHTML = "Мику";
-		сharacterDescriptionP1.innerHTML = "Японская виртуальная певица, созданная компанией Crypton Future Media 31 августа 2007 года. Для синтеза её голоса используется технология семплирования голоса живой певицы с использованием программы Vocaloid компании Yamaha Corporation. Голосовым донором послужила японская сейю Саки Фудзита. ";
-		сharacterDescriptionP2.innerHTML = "Оригинальный образ был создан японским иллюстратором KEI Garou, также работавшим над внешностью других вокалоидов для Crypton Future Media. Диски с песнями Мику завоевывали первые позиции в японских чартах. Она является самым известным и популярным вокалоидом и стала поп-идолом.";
+		сharacterDescriptionH.innerHTML = "Эмилия";
+		сharacterDescriptionP1.innerHTML = "Главная героиня, сереброволосая полуэльфийка, самый любимый персонаж автора в серии. Одна из кандидаток в королевы, владеет эмблемой, подтверждающей это. В первой временной линии спасает Субару от хулиганов, тогда же называется ему именем ведьмы зависти — «Сателла».";
+		сharacterDescriptionP2.innerHTML = "Из-за внешней схожести с ней часто подвергается пренебрежительному отношению. Владеет магией воды, огня, воздуха и земли. К Субару относится как к непослушному ребёнку, о котором необходимо заботиться, однако после его признания в любви к ней, Эмилия начинает развивать глубокую привязанность и симпатию к Субару.";
 	}
 	if(menuGerl.querySelector("input[type='radio'][name='gerl']:checked").value == '2'){
-		сharacterDescriptionH.innerHTML = "Акамэ";
-		сharacterDescriptionP1.innerHTML = "Состоит в «Ночном Рейде». Со стороны кажется, что Акамэ серьёзная, хладнокровная и бесчувственная девушка, но на самом деле она очень дорожит своими товарищами и заботится о них. Однако в бою не проявляет никаких эмоций, не даёт пощады врагу. В прошлом Акамэ и её младшую сестру Куромэ продали родители, и их купила Империя для обучения в качестве элитных убийц.";
-		сharacterDescriptionP2.innerHTML = "Она была на службе у Империи и видела, насколько сильно та прогнила. Надженда убедила её присоединиться к революции. Тэйгу Акамэ — Убийца одним ударом: «Мурасамэ». Этот меч пропитан смертоносным ядом, от которого нет противоядия.";
+		сharacterDescriptionH.innerHTML = "Мегумин";
+		сharacterDescriptionP1.innerHTML = "Четырнадцатилетняя архиволшебница из расы багровых демонов, одержимая магией взрывов. Способна сотворить взрыв огромной силы, который расходует ее суточный запас сил.";
+		сharacterDescriptionP2.innerHTML = "Учить какие-либо менее выматывающие заклинания Мэгумин не хочет, а потому толку в бою от нее не много. Так как в другие группы ее не брали, в итоге она присоединилась к группе Сато. Тем не менее, благодаря высокому урону, «Взрыв» на голову превосходит другие заклинания магов.";
 	}
 }
 begin2.onclick = function(){
-	menu.style.opacity = "0";
-	сharacterDescription.style.opacity = "0";
-	setTimeout(function(){
-		menu.style.display = "none";
-		сharacterDescription.style.display = "none";
-		loading.style.display = "block";
-	}, 250);
-	setTimeout(function(){
-		loadingRight.style.right = "0";
-		loadingLeft.style.left = "0";
-	}, 500);
-	setTimeout(function(){
-		document.location.href = "/lobby.html";
-	}, 1500);
-	nameHero = сharacterDescriptionH.innerHTML;
-	document.cookie = "nameHero="+ nameHero;
-	var newDate = Date.parse(new Date());
-	function getRandomArbitrary(min, max) {
-	  return Math.random() * (max - min) + min;
+	if(menuTest == true){
+		menu.style.opacity = "0";
+		сharacterDescription.style.opacity = "0";
+		setTimeout(function(){
+			menu.style.display = "none";
+			сharacterDescription.style.display = "none";
+			loading.style.display = "block";
+		}, 250);
+		setTimeout(function(){
+			loadingRight.style.right = "0";
+			loadingLeft.style.left = "0";
+		}, 500);
+		setTimeout(function(){
+			document.location.href = "/lobby.html";
+		}, 1500);
+		nameHero = сharacterDescriptionH.innerHTML;
+		document.cookie = "nameHero="+ nameHero;
+		var newDate = Date.parse(new Date());
+		function getRandomArbitrary(min, max) {
+		  return Math.random() * (max - min) + min;
+		}
+		document.cookie = "userId=" + getRandomArbitrary(0, 999999) + nameHero + newDate;
 	}
-	document.cookie = "userId=" + getRandomArbitrary(0, 999999) + nameHero + newDate;
 }
 var socket = io('127.0.0.1:3002');
 infoDivOnline = document.getElementById('info-div-online');

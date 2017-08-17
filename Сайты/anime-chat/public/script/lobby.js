@@ -61,11 +61,11 @@ if(testCookie != "true"){
 	}
 	}
 	var girls = ['url(img/hero/girls/girl.png)','url(img/hero/girls/girl-2.png)'];
-		var girlsHeight = [850,551];
-		var girlsWidth  = [499,459];
-		var boys = ['url(img/hero/girls/boy.png)'];
-		var boysHeight = [552];
-		var boysWidth  = [362];
+		var girlsHeight = [850,750];
+		var girlsWidth  = [499,750];
+		var boys = ['url(img/hero/boys/boy.png)','url(img/hero/boys/boy-2.png)'];
+		var boysHeight = [900, 917];
+		var boysWidth  = [500, 500];
 		var hero = document.getElementById('hero');
 		hero.style.left = "calc(50% - 250px)";
 		// socket
@@ -86,20 +86,25 @@ if(testCookie != "true"){
 			socket.on('hero', function(nameHeroInterlocutor){
 				dialogWindow.textContent = "Вы прогуливались и случайно наткнулись на персонажа: " + nameHeroInterlocutor;
 				switch(nameHeroInterlocutor) {
-				case "Мику":
+				case "Эмилия":
 					hero.style.backgroundImage = girls[0];
 					hero.style.height = girlsHeight[0] + "px";
 					hero.style.width = girlsWidth[0] + "px";
 					break;
-				case "Акамэ":
+				case "Мегумин":
 					hero.style.backgroundImage = girls[1];
 					hero.style.height = girlsHeight[1] + "px";
 					hero.style.width = girlsWidth[1] + "px";
 					break;
-				case "Саске":
+				case "Кирито":
 					hero.style.backgroundImage = boys[0];
 					hero.style.height = boysHeight[0] + "px";
 					hero.style.width = boysWidth[0] + "px";
+					break;
+				case "Саске Учиха":
+					hero.style.backgroundImage = boys[1];
+					hero.style.height = boysHeight[1] + "px";
+					hero.style.width = boysWidth[1] + "px";
 					break;
 				}
 				hero.style.display = "block";

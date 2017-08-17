@@ -169,6 +169,15 @@ h3{
 #vk:hover{
 	transform: rotate(360deg);
 }
+#discord{
+	position: absolute;
+	bottom: 28px;
+	right: 130px;
+	transition: transform 1s;
+}
+#discord:hover{
+	transform: rotate(-360deg);
+}
 #info-div{
 	height: 75px;
 	width: 250px;
