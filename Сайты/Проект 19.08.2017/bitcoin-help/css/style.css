@@ -2547,7 +2547,7 @@ symbol.icon rect {
 
 #help-img{
   height: 85px;
-  width: 90px;
+  width: 90px !important;
   background-image: url("../images/help.png");
 }
 
@@ -2677,8 +2677,8 @@ symbol.icon rect {
   font: 18px RobotoBold;
   color: #fff;
   position: absolute;
-  top: 43px;
-  left: 390px;
+  top: -50px;
+  left: 0;
 }
 
 #slider-ul{
@@ -2706,6 +2706,7 @@ symbol.icon rect {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  position: relative;
 }
 
 .arrow{
@@ -2723,4 +2724,130 @@ symbol.icon rect {
 
 #arrow-right{
   background-image: url(../images/arrow-right.png);
+}
+
+@media only screen and (max-width: 1160px){
+
+  #slider-title{
+  left: 20px;
+  }
+
+  .arrow{
+    margin: 0 15px;
+  }
+
+}
+
+@media only screen and (max-width: 1130px){
+
+  #main{
+    height: auto;
+  }
+
+  #content-title{
+    width: 100%;
+    padding: 0 20px 0;
+  }
+
+  #line{
+    margin: 0 auto 0 20px;
+  }
+
+  .content-text{
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  #title-ul{
+    margin: 0 auto 10px 20px;
+  }
+
+  #ul-content{
+    margin: 0 auto 20px 20px;
+  }
+
+  #main > img{
+    padding: 0 20px;
+  }
+
+  #content-table{
+    padding: 0 20px;
+  }
+
+  #bitcoin-title{
+    margin-left: 20px;
+  }
+
+  #help-img{
+    margin-right: 20px;
+  }
+
+  #ul-content{
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 980px){
+
+  #slider{
+    height: 420px;
+  }
+
+  #slider-content{
+    height: auto;
+  }
+
+  #slider-ul {
+    height: 270px;
+    flex-direction: column;
+  }
+
+  .arrow{
+    margin: 110px 40px 0;
+  }
+
+}
+
+@media only screen and (max-width: 980px){
+
+  #line{
+    display: none;
+  }
+
+  #content-title{
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (max-width: 680px){
+
+  #bitcoin-title{
+    font-size: 46px;
+  }
+
+}
+
+@media only screen and (max-width: 607px){
+
+  #content-ul-2{
+    margin-right: auto;
+  }
+
+  #content-ul-2 > div{
+    margin: 10px 0 10px 0;
+  }
+
+}
+
+@media only screen and (max-width: 566px){
+
+  #help-img{
+    display: none;
+  }
+
 }
