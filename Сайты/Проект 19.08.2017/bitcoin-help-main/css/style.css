@@ -2494,7 +2494,7 @@ symbol.icon rect {
 /* main */
 
 #main{
-  height: 2260px;
+  height: 1475px;
   width: 100%;
   background: #fff;
   display: flex;
@@ -2551,268 +2551,57 @@ symbol.icon rect {
   background-image: url("../images/help.png");
 }
 
-#content-title{
-  width: 1085px;
+.title-ul{
   font: 30px RobotoRegular;
-  color: #284a55;
-  margin: 50px 0 25px;
-}
-
-#line{
-  height: 1px;
-  width: 748px;
-  background: #ffc828;
-  margin-right: 337px;
-}
-
-.content-text{
-  width: 1085px;
-  font: 16px RobotoLight;
   color: #234049;
-  margin: 48px 0 44px;
+  margin: 15px 0;
 }
 
-.content-text > a{
-  color: #2492ba;
-}
-
-#ul-content{
-  display: flex;
-  margin: 0 530px 20px 0;
-}
-
-#title-ul{
-  font: 18px RobotoBold;
-  color: #234049;
-  margin: 0 875px 10px 0;
-}
-
-#content-ul-1{
+.content-ul{
   padding: 0;
 }
 
-#content-ul-1 li{
+.content-ul li{
   list-style-type: none;
-  width: 390px;
-  font: 18px RobotoLightd;
+  width: 450px;
+  font: 16px RobotoRegular;
   color: #284a55;
   padding-left: 32px;
   background-image: url(../images/list-icon.png);
   background-repeat: no-repeat;
   background-position: left 6px;
-  margin: 12px 0;
-}
-
-#content-ul-2{
-  margin-top: 14px;
-}
-
-#content-ul-2 > div{
-  display: flex;
-  align-items: center;
-  font: 16px RobotoLight;
-  color: #234049;
-  margin: 10px 0 10px 50px;
-}
-
-.circle{
-  height: 32px;
-  width: 32px;
-  border: 3px solid #ffc828;
-  border-radius: 50%;
-  text-align: center;
-  padding: 3px 0 0;
-  font: 16px RobotoBold;
-  color: #234049;
-  margin-right: 15px;
-}
-
-#content-table td{
-  color: #234049;
-  font-size: 16px;
-}
-
-#content-table > tbody > tr > td:first-child{
-  height: 49px;
-  width: 207px;
-  background: #f3f3f3;
-  padding-left: 20px;
-}
-
-#content-table > tbody > tr > td:nth-child(2){
-  height: 49px;
-  width: 802px;
-  background: #f3f3f3;
-  padding-left: 20px;
-}
-
-#content-table > tbody > tr > td:last-child{
-  height: 49px;
-  width: 67px;
-  background: #f3f3f3;
-  text-align: center;
-}
-
-#content-table > tbody > tr:first-child > td{
-  background: #ffd912;
-  font-family: RobotoBoldItalic;
-}
-
-#content-text-2{
-  font: 16px RobotoLightItalic;
-  margin: 20px 0 20px 0;
-}
-
-#slider{
-  height: 250px;
-  width: 100%;
-  background: #284a55;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#slider-title{
-  font: 18px RobotoBold;
-  color: #fff;
-  position: absolute;
-  top: -50px;
-  left: 0;
-}
-
-#slider-ul{
-  display: flex;
-  height: 100px;
-  padding: 0;
-  margin: 0;
-}
-
-#slider-ul > li{
-  list-style-type: none;
-  width: 290px;
-  font: 16px RobotoRegular;
+  margin: 12px 0 36px;
   color: #04a8db;
-  padding-left: 20px;
-  background-image: url(../images/list-icon.png);
-  background-repeat: no-repeat;
-  background-position: left 6px;
-  margin: 12px 0;
 }
 
-#slider-content{
-  height: 100px;
-  width: 1130px;
+#line{
+  height: 1px;
+  width: 480px;
+  background: #f7b434;
+  margin-bottom: 60px;
+}
+
+#content{
+  height: auto;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.arrow{
-  height: 31px;
-  width: 19px;
-  background: none;
-  border: none;
-  cursor: pointer;
+.content-block{
+  margin: 0 100px;
 }
 
-#arrow-left{
-  background-image: url(../images/arrow-left.png);
-}
-
-#arrow-right{
-  background-image: url(../images/arrow-right.png);
-}
-
-@media only screen and (max-width: 1160px){
-
-  #slider-title{
-  left: 20px;
-  }
-
+#d1{
+  margin-right: 750px;
 }
 
 @media only screen and (max-width: 1130px){
 
   #main{
     height: auto;
-  }
-
-  #content-title{
-    width: 100%;
-    padding: 0 20px 0;
-  }
-
-  #line{
-    margin: 0 auto 0 20px;
-  }
-
-  .content-text{
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  #title-ul{
-    margin: 0 auto 10px 20px;
-  }
-
-  #ul-content{
-    margin: 0 auto 20px 20px;
-  }
-
-  #main > img{
-    padding: 0 20px;
-  }
-
-  #content-table{
-    padding: 0 20px;
-  }
-
-  #bitcoin-title{
-    margin-left: 20px;
-  }
-
-  #help-img{
-    margin-right: 20px;
-  }
-
-  #ul-content{
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-}
-
-@media only screen and (max-width: 980px){
-
-  #slider{
-    height: auto;
-    padding: 40px 0px;
-  }
-
-  #slider-content{
-    height: auto;
-    align-items: center;
-  }
-
-  #slider-ul {
-    height: auto;
-    flex-direction: column;
-  }
-
-}
-
-@media only screen and (max-width: 980px){
-
-  #line{
-    display: none;
-  }
-
-  #content-title{
-    margin-bottom: 0;
   }
 
 }
@@ -2825,43 +2614,10 @@ symbol.icon rect {
 
 }
 
-@media only screen and (max-width: 607px){
-
-  #content-ul-2{
-    margin-right: auto;
-  }
-
-  #content-ul-2 > div{
-    margin: 10px 0 10px 0;
-  }
-
-  #content-ul-1{
-    margin-right: auto;
-  }
-
-  #slider-ul > li {
-    background-image: none;
-  }
-
-}
-
 @media only screen and (max-width: 566px){
 
   #help-img{
     display: none;
-  }
-
-}
-
-@media only screen and (max-width: 540px){
-
-  #slider-title{
-    left: 50%;
-    margin-left: -87px;
-  }
-
-  #slider-ul > li{
-    width: auto;
   }
 
 }
