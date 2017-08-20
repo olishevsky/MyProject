@@ -1,4 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&subset=cyrillic';
+@font-face {
+  font-family: "RobotoBold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "RobotoLightd";
+    src: url(../fonts/Roboto-Light.ttf);
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,6 +18,7 @@
 }
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 img {
   vertical-align: top;
@@ -2475,4 +2484,119 @@ symbol.icon rect {
   height: 643px;
   width: 100%;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#error-1{
+  margin: 75px 45px 0 0;
+}
+
+#line{
+  height: 206px;
+  width: 1px;
+  background: #ffc828;
+  margin-top: 180px;
+}
+
+#error-2{
+  margin: 75px 0 0 45px;
+}
+
+#error-404{
+  height: auto;
+  max-width: 100%;
+}
+
+#title-404{
+  font: 42.78px RobotoBold;
+  color: #284a55;
+  margin-bottom: 45px;
+}
+
+#text-error{
+  font: 20px RobotoBold;
+  color: #284a55;
+  margin-bottom: 125px;
+  text-align: center;
+}
+
+#cause-error-title{
+  font: 25px RobotoBold;
+  color: #284a55;
+  margin: 32px 0 21px;
+}
+
+.cause-error{
+  width: 390px;
+  font: 18px RobotoLightd;
+  color: #284a55;
+  padding-left: 32px;
+  background-image: url(../images/list-icon.png);
+  background-repeat: no-repeat;
+  background-position: left 6px;
+  margin: 12px 0;
+}
+@media only screen and (max-width: 1002px){
+
+  #title-404{
+    text-align: center;
+  }
+
+  #line{
+    display: none;
+  }
+
+  #main{
+    height: auto;
+  }
+
+  #text-error{
+    width: 600px;
+    margin: 35px 40px 100px;
+  }
+
+}
+@media only screen and (max-width: 900px){
+
+  #error-1{
+     margin: 75px 0 0 0;
+  }
+
+  #error-2{
+  margin: 75px 10px 0 10px;
+  }
+  #text-error{
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 500px){
+
+  #error-404{
+    padding: 0 40px;
+  }
+
+}
+@media only screen and (max-width: 480px){
+
+  #cause-error-title{
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cause-error{
+    width: auto;
+    font-size: 16px;
+  }
+
+  .cause-error{
+    margin: 10px 32px;
+  }
+  #text-error{
+    font-size: 16px;
+  }
 }
