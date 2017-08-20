@@ -2574,7 +2574,7 @@ symbol.icon rect {
   color: #04a8db;
 }
 
-#line{
+.line{
   height: 1px;
   width: 480px;
   background: #f7b434;
@@ -2594,14 +2594,37 @@ symbol.icon rect {
   margin: 0 100px;
 }
 
-#d1{
+#last{
   margin-right: 750px;
+}
+
+@media only screen and (max-width: 1377px){
+
+  #main{
+    height: auto;
+  }
+
+  #last{
+  margin-right: 100px;
+  }
 }
 
 @media only screen and (max-width: 1130px){
 
   #main{
     height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 750px){
+
+  .content-block{
+    margin: 0;
+  }
+
+  #last{
+    margin: 0;
   }
 
 }
@@ -2614,10 +2637,33 @@ symbol.icon rect {
 
 }
 
+
 @media only screen and (max-width: 566px){
 
   #help-img{
     display: none;
   }
 
+}
+
+@media only screen and (max-width: 530px){
+
+  .content-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-ul{
+    width: auto;
+    text-align: center;
+  }
+
+  .line{
+    width: 280px;
+  }
+  .content-ul li{
+    width: 250px;
+  }
 }
