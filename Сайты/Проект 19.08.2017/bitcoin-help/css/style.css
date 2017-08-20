@@ -15,6 +15,11 @@
   font-family: "RobotoBoldItalic";
     src: url(../fonts/Roboto-BoldItalic.ttf);
 }
+@font-face {
+  font-family: "RobotoLightItalic";
+    src: url(../fonts/Roboto-LightItalic.ttf);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2489,7 +2494,7 @@ symbol.icon rect {
 /* main */
 
 #main{
-  height: 1478px;
+  height: 2260px;
   width: 100%;
   background: #fff;
   display: flex;
@@ -2651,4 +2656,71 @@ symbol.icon rect {
 #content-table > tbody > tr:first-child > td{
   background: #ffd912;
   font-family: RobotoBoldItalic;
+}
+
+#content-text-2{
+  font: 16px RobotoLightItalic;
+  margin: 20px 0 20px 0;
+}
+
+#slider{
+  height: 250px;
+  width: 100%;
+  background: #284a55;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider-title{
+  font: 18px RobotoBold;
+  color: #fff;
+  position: absolute;
+  top: 43px;
+  left: 390px;
+}
+
+#slider-ul{
+  display: flex;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+#slider-ul > li{
+  list-style-type: none;
+  width: 290px;
+  font: 16px RobotoRegular;
+  color: #04a8db;
+  padding-left: 20px;
+  background-image: url(../images/list-icon.png);
+  background-repeat: no-repeat;
+  background-position: left 6px;
+  margin: 12px 0;
+}
+
+#slider-content{
+  height: 100px;
+  width: 1130px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.arrow{
+  height: 31px;
+  width: 19px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+#arrow-left{
+  background-image: url(../images/arrow-left.png);
+}
+
+#arrow-right{
+  background-image: url(../images/arrow-right.png);
 }
