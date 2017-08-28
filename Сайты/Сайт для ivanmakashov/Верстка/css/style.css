@@ -1,0 +1,53 @@
+@font-face {
+	font-family: "bebasNeueRegular";
+    src: url(../fonts/bebas_neue_regular.otf);
+}
+
+@font-face {
+	font-family: "openSans";
+    src: url(../fonts/open_sans.ttf);
+}
+
+@font-face {
+	font-family: "openSansBold";
+    src: url(../fonts/open_sans_bold.ttf);
+}
+
+@font-face {
+	font-family: "bebasNeueBold";
+    src: url(../fonts/bebas_neue_bold.ttf);
+}
+
+#head-block{
+	background: #000;
+}
+
+#head-block  a{
+	font-size: 20px;
+	color: #fff;
+	padding: 0 8px;
+}
+
+#head-menu{
+	text-align: center;
+}
+
+#phone{
+	font-size: 22px;
+	color: #fff;
+	text-align: right;
+}
+#button-menu{
+	color: #fff;
+	font-size: 32px;
+	cursor: pointer;
+	display: none;
+}
+@media only screen and (max-width: 768px){
+	#head-menu{
+		display: none;
+	}
+	#button-menu{
+		display: block;
+	}
+}
