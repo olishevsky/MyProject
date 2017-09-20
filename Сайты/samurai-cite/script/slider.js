@@ -25,9 +25,22 @@ function onclickSlide(slideSwitchLocal, slideNumber){
 	sliderSwitch[slide].style.color = "#000";
 	sliderSwitch[slide].style.background = "#fff";
 	sliderArray[slide].style.display = "block";
+	}
 }
 
-}
+setInterval(function(){
+	sliderArray[slide].style.display = "none";
+	sliderSwitch[slide].style.color = "#fff";
+	sliderSwitch[slide].style.background = "none";
+	slide++;
+	if(slide > 4){
+		slide = 0;
+	}
+	sliderSwitch[slide].style.color = "#000";
+	sliderSwitch[slide].style.background = "#fff";
+	sliderArray[slide].style.display = "block";
+	sliderContainerText.innerHTML = "Приходите к нам на " + sliderContainerTextArray[slide];
+},15000)
 
 sliderButtonRight.onclick = function(){
 	sliderArray[slide].style.display = "none";
