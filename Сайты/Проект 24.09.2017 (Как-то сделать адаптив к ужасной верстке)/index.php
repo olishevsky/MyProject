@@ -40,7 +40,7 @@
         </div>
         <div class="col-xs-6 right-text header__head-adaptive-block-2">
           <div class="col-xs-6 adress header__head-adaptive-block-2-element-1">
-            <p class="text-center">г. Москва <br>Проспект Вернадского, д. 27, корп. 1 <br>ЮЗАО, м. Проспект Вернадского</p>
+            <p class="text-center">г. Москва <br>Проспект Вернадского, д. 27, корп.1 <br>ЮЗАО, м. Проспект Вернадского</p>
           </div>
           <div class="col-xs-6 tell header__head-adaptive-block-2-element-2">
       <i class="fa fa-phone" style="font-size: 30px; position: absolute; top:10px; left:14px;" aria-hidden="true"></i>
@@ -59,7 +59,8 @@
       </div>
       <div class="container">
         <div class="head-form">
-          <div class="col-xs-offset-7 rrr">
+          <div class="col-xs-offset-7 rrr adaptive-form-1000rub">
+		  <img class="img-adaptive-dogs" src="img/adaptive-dogs.jpg">
             <div class="cont-rrr text-center">
               <span class="one">ПОЛУЧИТЕ 1000 РУБЛЕЙ<br>НА СТРИЖКУ ПИТОМЦА<br>ПРЯМО СЕЙЧАС</span>
               <form id="form3" style="margin-top: -70px;">
@@ -71,7 +72,7 @@
         </div>
       </div>
 <div class="clearfix"></div>
-    <div class="mob text-center">
+    <div class="mob text-center adaptive-aplication-info">
       <div class="container">
         <div class="col-xs-7 pad1">
           <div class="left-mob">
@@ -79,7 +80,7 @@
             <a href="#" class="btn btn-success programm" data-toggle="modal" data-target="#mobb">получить приложение</a>
           </div>
           </div>
-          <div class="col-xs-5 text-center pad">
+          <div class="col-xs-5 text-center pad adaptive-aplication-info-2">
             <div class="poster">
               <p class="ty">Во время стрижки собаки, присутствие хозяина рядом нежелательно: любимец, может вести <br> себя неспокойно, отвлекаться, что может<br> неблагоприятно сказаться на качестве<br> стрижки и затянуть процесс.</p>
             </div>
@@ -88,7 +89,7 @@
               <span>Только в нашем салоне вы можете наблюдать за работой мастера над вашим любимцем,<br> из любого места где есть интернет.</span>
             </div>
             <div class="clearfix"></div>
-            <div class="poster v">
+            <div class="poster v adaptive-aplication-info-2-3">
               <p class="ty">Из комнаты отдыха нашего салона или даже отлучившись по делам, Вы всегда можете <br> следить за стрижкой своего четвероногого<br> друга ОНЛАЙН, через бесплатное приложение на вашем телефоне.</p>
             </div>
           </div>
@@ -337,12 +338,12 @@
 <div class="clearfix"></div>
 <div class="clearfix" id="counts"></div>
     <div class="discount">
-      <div class="container text-center">
-        <p class="cash-tit marg">Система скидок для наших клиентов</p><br>
-        <div class="col-xs-6">
+      <div class="container text-center adaptive-discounts">
+        <p class="cash-tit marg adaptive-discounts-block1">Система скидок для наших клиентов</p><br>
+        <div class="col-xs-6 adaptive-discounts-block2">
           <img src="img/happi.jpg" alt="">
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 adaptive-discounts-block3">
             <div class="cart-disc">
               <p class="percent"><span class="spincrement">-10</span>%</p>
               <span class="percent-content">На все услуги постоянным клиентам <br>(после 5-го посещения)</span>
@@ -593,28 +594,27 @@
                       <p class="slogan">Доверьте уход за вашим <br> питомцем<br> профессионалам!</p>
                     </div>
 <div class="clearfix"></div>
-                    <div class="container">
+        <div class="container">
         <div class="head-form">
-            <div class="col-xs-offset-7 rrr">
-               <div class="cont-rrr text-center">
-                <span class="one">ПОЛУЧИТЕ 1000 РУБЛЕЙ<br>НА СТРИЖКУ ПИТОМЦА<br>ПРЯМО СЕЙЧАС</span>
-                
-                <form id="form4" style="margin-top: -70px;">
-                  <input id="phone2" class="tell-mod2 text-center" type="text" name="tell" placeholder="+7(___)___-__-__" required>
-                  <input type="submit" value="ПОЛУЧИТЬ 1000 РУБЛЕЙ" class="btn btn-success start-btn wow bounce" data-wow-iteration="3" data-wow-duration="1s">
-                </form>
-                <br>
-              </div>
+          <div class="col-xs-offset-7 rrr adaptive-form-1000rub">
+		  <img class="img-adaptive-dogs" src="img/adaptive-dogs.jpg">
+            <div class="cont-rrr text-center">
+              <span class="one">ПОЛУЧИТЕ 1000 РУБЛЕЙ<br>НА СТРИЖКУ ПИТОМЦА<br>ПРЯМО СЕЙЧАС</span>
+              <form id="form3" style="margin-top: -70px;">
+				  <input id="phone1" class="tell-mod2 text-center" type="text" name="tell" placeholder="+7(___)___-__-__" required>
+				  <input type="submit" value="ПОЛУЧИТЬ 1000 РУБЛЕЙ" class="btn btn-success start-btn wow bounce" data-wow-iteration="3" data-wow-duration="1s">
+			  </form>
             </div>
           </div>
         </div>
-          <div class="text-center end-slogan">
+      </div>
+        </div>
+      </div>
+      <div class="adaptive-map">
+	  <div class="text-center end-slogan">
 		  <p>Всегда ждем Вас по адресу</p>
 		  <span>Москва, Проспект Вернадского, д. 27, корп. 1</span>
 		  </div>
-        </div>
-      </div>
-      <div style="min-width: 1200px;">
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69c092a7fd0315ffd6cb150bc9a412407fcce122d9a577713ab1d445931c15b7&amp;width=100%25&amp;height=400&amp;lang=ru_UA&amp;scroll=true"></script>
       </div>
       <div class="footer">
