@@ -184,13 +184,14 @@
       </div>
     </div>
 	<div class="clearfix"></div>
-    <div class="cash text-center">
-    <div class="container">
-      <span class="cash-tit">Возвращаем до 30% потраченных в салоне денег</span>
-        <div class="col-xs-offset-6">
+    <div class="cash text-center adaptive-discount">
+    <div class="container adaptive-discount-container">
+      <span class="cash-tit adaptive-discount-title">Возвращаем до 30% потраченных в салоне денег</span>
+		<img class="adaptive-discount-img" src="img/cash-bg.jpg" alt="">
+        <div class="col-xs-offset-6 adaptive-discount-block">
           <div class="cash-info">
-            <p class="one-c">От 5% до 30% от потраченных денег на услуги и покупки в нашем салоне возвращаются к вам на личный счет в виде бонусных рублей!</p><br>
-            <p class="one-c">Накопленные бонусные рубли могут быть потрачены  на любые услуги и покупки в нашем салоне.</p><br>
+            <p class="one-c adaprive-one-c">От 5% до 30% от потраченных денег на услуги и покупки в нашем салоне возвращаются к вам на личный счет в виде бонусных рублей!</p><br>
+            <p class="one-c adaprive-one-c">Накопленные бонусные рубли могут быть потрачены  на любые услуги и покупки в нашем салоне.</p><br>
             <span>1 бонусный рубль = 1 рубль РФ</span>
           </div>
         </div>
@@ -366,7 +367,7 @@
 	  <div class="clearfix"></div>
     <div class="container wow tada">
       <div class="send">
-        <div class="col-xs-8">
+        <div class="col-xs-8 adaptive-send-block-1">
           <p class="h-con c">НАМ очень ВАЖНО, ЧТОБЫ ВЫ БЫЛИ ДОВОЛЬНЫ РЕЗУЛЬТАТОМ!</p><br>
           <span class="text-send">Если вам что-то не понравилось  в стрижке, обсудите это с  мастером и <br><b>получите купон со скидкой 50%</b> <br>на следующую стрижку. <br>В следующий раз Вы получите идеальный результат!</span><br>
           <div class="col-xs-10">
@@ -378,57 +379,57 @@
             <img src="img/arrow.png" alt="">
           </div>
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-4 adaptive-send-block-2">
           <img src="img/principal.jpg" class="mar" alt=""><br>
           <a href="#" class="btn btn-success send-prin" data-toggle="modal" data-target="#write">НАПИСАТЬ ДИРЕКТОРУ САЛОНА</a>
         </div>
       </div>
     </div>
 <div class="clearfix"></div>
-    <div class="static text-center">
+    <div class="static text-center adaptive-advantages">
       <div class="container">
         <div class="col-xs-offset-3 block-s wid">
-          <p class="spincrement">4000</p>
-          <span>постоянных клиентов <br>ЦЕНЯТ Наши УСЛУГИ</span>
+          <p class="spincrement spincrement-adaptive">4000</p>
+          <span class="adaptive-advantages-span">постоянных клиентов <br>ЦЕНЯТ Наши УСЛУГИ</span>
         </div>
         <div class="col-xs-6">
           <div class="block-f block-s">
-            <p>получено БОЛЕЕ</p>
-            <span><b class="spincrement">100</b> наград и дипломов</span>
+            <p class="adaptive-advantages-text">получено БОЛЕЕ</p>
+            <span class="adaptive-advantages-span"><b class="spincrement spincrement-adaptive">100</b> наград и дипломов</span>
           </div>
         </div>
         <div class="col-xs-6">
           <div class="block-f block-s">
-            <p>Проведено БОЛЕЕ</p>
-            <span><b class="spincrement">42000</b> стрижек</span>
+            <p class="adaptive-advantages-text">Проведено БОЛЕЕ</p>
+            <span class="adaptive-advantages-span"><b class="spincrement spincrement-adaptive">42000</b> стрижек</span>
           </div>
         </div>
         <div class="col-xs-3">
           <div class="block-t block-s">
-            <p>БОЛЕЕ</p>
-            <span><b class="spincrement">15</b> лет</span><br>
-            <span class="fix-b">НА РЫНКЕ УСЛУГ</span>
+            <p class="adaptive-advantages-text">БОЛЕЕ</p>
+            <span class="adaptive-advantages-span"><b class="spincrement spincrement-adaptive">15</b> лет</span><br>
+            <span class="fix-b adaptive-advantages-span">НА РЫНКЕ УСЛУГ</span>
           </div>
         </div>
         <div class="col-xs-3">
           <div class="block-t block-s">
-            <p>НЕ МЕНЕЕ</p>
-            <span><b class="spincrement">3</b> лет</span><br>
-            <span class="fix-b">СТАЖА МАСТЕРОВ</span>
+            <p class="adaptive-advantages-text">НЕ МЕНЕЕ</p>
+            <span class="adaptive-advantages-span"><b class="spincrement spincrement-adaptive">3</b> лет</span><br>
+            <span class="fix-b adaptive-advantages-span">СТАЖА МАСТЕРОВ</span>
           </div>
         </div>
         <div class="col-xs-3">
           <div class="block-t block-s">
-            <p>БОЛЕЕ</p>
-            <span><b class="spincrement">200</b> клиентов</span><br>
-            <span class="fix-b">клиентов ежемесячно</span>
+            <p class="adaptive-advantages-text">БОЛЕЕ</p>
+            <span class="adaptive-advantages-span"><b class="spincrement spincrement-adaptive">200</b> клиентов</span><br>
+            <span class="fix-b adaptive-advantages-span">клиентов ежемесячно</span>
           </div>
         </div>
         <div class="col-xs-3">
           <div class="block-t block-s">
-            <p>ОКОЛО</p>
-            <span><b class="spincrement">60</b> %</span><br>
-            <span class="fix-b">по рекомендации</span>
+            <p class="adaptive-advantages-text">ОКОЛО</p>
+            <span class="adaptive-advantages-span"><b class="spincrement spincrement-adaptive">60</b> %</span><br>
+            <span class="fix-b adaptive-advantages-span">по рекомендации</span>
           </div>
         </div>
       </div>
@@ -477,41 +478,41 @@
     </div>
 <div class="clearfix"></div>
       <div class="instagram text-center">
-      <div class="container rw">
+      <div class="container rw adaptive-rw">
         <p>Отзывы наших клиентов</p>
-        <div class="col" style="width: 33.3333%">
+        <div class="col adaptive-col-1">
           <div class="cart">
             <img src="img/1-insta.jpg" alt=""><br>
           <img src="img/insta.png" alt="">  <a href="https://www.instagram.com/korneliamango/" target="_blank"><strong>@korneliamango</strong></a>
           </div>
         </div>
-        <div class="col" style="width: 35.5072%">
+        <div class="col adaptive-col-2">
           <div class="cart">
             <img src="img/2-insta.jpg" alt=""><br>
             <img src="img/insta.png" alt="">  <a href="https://www.instagram.com/mayer_kira/" target="_blank"><strong>@mayer_kira</strong></a>
           </div>
         </div>
-        <div class="col" style="width: 31.1594%">
+        <div class="col adaptive-col-3">
           <div class="cart">
             <img src="img/3-insta.jpg" alt=""><br>
             <img src="img/insta.png" alt="">  <a href="https://www.instagram.com/vareni4ek8/" target="_blank"><strong>@vareni4ek8</strong></a>
           </div>
         </div>
-        <div class="col" style="width: 38.029%">
+        <div class="col adaptive-col-4">
           <div class="cart" style="height: 345px">
             <p>Уже много лет вожу собак на стрижку в Арчибальд. Благодарна профессионалам и девочкам-ученикам за креативные стрижки!  Отдельно огромное спасибо Марине Обуховой, что вовремя заметила болезнь моей малютки и нашла слова, которые дошли до меня и я отреагировала на них своевременно. Огромное спасибо за доброжелательную обстановку и теплый прием!</p>
             <img src="img/4-insta.jpg" class="photoi" alt="">
             <img src="img/vk.png" alt="" class="photoss"> <a href="https://vk.com/kiska54752" target="_blank" class="photoa">  Ирина <br> Житкевич</a>
           </div>
         </div>
-        <div class="col" style="width: 30.8116%; margin-top: 50px;">
+        <div class="col adaptive-col-5">
           <div class="cart fixx" style="height: 290px">
             <p>Хочу выразить огромную благодарность мастерам и сотрудникам "Арчибальд" за профессиональную работу. Будем приходить к Вам снова.</p>
             <img src="img/5-insta.jpg" class="photoi" alt="">
             <img src="img/vk.png" alt="" class="photoss"> <a href="https://vk.com/eleonora_in_love_cinderella" target="_blank" class="photoa" >Элеонора<br> Алибаева</a>
           </div>
         </div>
-        <div class="col" style="width: 31.1594%; margin-top: 70px;">
+        <div class="col adaptive-col-6">
           <div class="cart" style="height: 250px">
             <p>Огромное спасибо  грумеру Евгении за кропотливый труд с моими любымымй  собачками. У нас не осталось ни одного колтун. Девочки вновь гладкие, пушистые. Будем обращаться еще. Благодарю!</p>
             <img src="img/6-insta.jpg" class="photoi" alt="">
@@ -519,21 +520,21 @@
           </div>
         </div>
 <div class="clearfix"></div>
-        <div class="col" style="width: 35.2464%; margin-top: 30px;">
+        <div class="col adaptive-col-7">
           <div class="cart" style="height: 325px">
             <p>У нас спаниель Пуля, приходим на полный комплекс уже не первый раз. Всегда остаемся очень довольны. Собака всегда выходит красивая, ухоженная, с хорошим и порой даже отличным настроением! Доброе и деликатное отношение - спасибо за это! В руках доброго и уверенного професионала собака ведет себя идеально!</p>
             <img src="img/7-insta.jpg" class="photoi" alt="">
             <img src="img/fb.png" alt="" class="photoss"> <a href="https://www.facebook.com/profile.php?id=100014495763023" target="_blank" class="photoa">  Юля<br> Виноградова</a>
           </div>
         </div>
-        <div class="col" style="width: 34.6377%; margin-top: 32px;">
+        <div class="col adaptive-col-8">
           <div class="cart fixx" style="height: 325px">
             <p>Спасибо Олесе и Марине за отличную стрижку моей хохлатки! Очень красивая и качественная работа!</p>
             <br><img src="img/8-insta.jpg" class="photoi" alt="">
             <div style="margin-top: 30px"><img src="img/fb.png" alt="" class="photoss"> <a href="https://www.facebook.com/profile.php?id=100002287988796" target="_blank" class="photoa"> Юлия<br> Дмитриевская</a></div>
           </div>
         </div>
-        <div class="col" style="width: 30.1159%; margin-top: 20px;">
+        <div class="col adaptive-col-9">
           <div class="cart" style="height: 350px">
             <p>Большое спасибо сотрудникам салона "Арчибальд" за внимательное и доброе отношение к собакам, посещаем этот салон уже не первый год и всегда неизменно довольны результатом. Собачка хорошеет на глазах. Скоро приведем второе поколение нашей собачки Жужи. Очень отзывчивый и внимательный персонал. Спасибо Вашему салону!</p>
             <img src="img/9-insta.jpg" class="photoi fix3" alt="">
