@@ -1217,6 +1217,9 @@ margin-left: -140px;
   color: rgb(255, 255, 255);
   box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
+.one-c{
+	padding-left: 40px;
+}
 @media screen and (max-width: 1358px) {
 	.container__head-adaptive{
 		width: 100%;
@@ -1281,6 +1284,51 @@ margin-left: -140px;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+	.adaptive-7-reasons{
+		width: calc(100% - 30px);
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.adaptive-info-salon{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.adaptive-info-salon > div{
+		width: 300px;
+	}
+	.adaptive-info-salon-2{
+		width: 100%;
+		padding: 0;
+	}
+	.pro-con{
+		width: 220px;
+	}
+	.adaptive-masters-info{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.footer{
+		min-width: 240px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.adaptive-info-salon-2{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.adaptive-info-salon-2 > div{
+		width: 300px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.lvl{
+		margin-bottom: 10px;
+	}
 }
 @media screen and (max-width: 850px) {
 	.header__head-adaptive-logo{
@@ -1288,6 +1336,16 @@ margin-left: -140px;
 	}
 	.header__head-adaptive-block-2-element-2{
 		right: calc(38% - 100px);
+	}
+}
+@media screen and (max-width: 800px) {
+	.adaptive-7-reasons{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.lvl{
+	width: 360px;	
 	}
 }
 @media screen and (max-width: 740px) {
@@ -1314,6 +1372,11 @@ margin-left: -140px;
 		right: calc(29% - 100px);
 	}
 }
+@media screen and (max-width: 600px){
+	.h-con{
+		font-size: 24px;
+	}
+}
 @media screen and (max-width: 530px){
 	.one-category{
 		padding-top: 40px;
@@ -1330,6 +1393,17 @@ margin-left: -140px;
 		margin: 0 10px;
 	}
 }
+@media screen and (max-width: 500px){
+	.dog-button-adaptive{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 440px){
+	.h-con{
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
 @media screen and (max-width: 420px) {
 	.header__head-adaptive-block-1{
 		padding: 0;
@@ -1343,6 +1417,12 @@ margin-left: -140px;
 	.one-category{
 		font-size: 24px;
 		line-height: 36px;
+	}
+	.dog-button-adaptive{
+		width: (100% - 20px);
+		margin-left: 10px;
+		margin-right: 10px;
+		white-space: normal;
 	}
 }
 @media screen and (max-width: 400px) {
@@ -1359,6 +1439,29 @@ margin-left: -140px;
 	.header__head-adaptive-block-1{
 		margin-top: 280px;
 	}
+	.lvl{
+		width: calc(100% - 20px);
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.lvl img{
+		max-width: 100%;
+		height: auto;
+	}
+	.number{
+		font-size: 42px;
+	}
+	.title-m p{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.title-m span{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.foot-text{
+		font-size: 12px;
+	}
 }
 @media screen and (max-width: 320px) {
 	.head-h{
@@ -1366,5 +1469,8 @@ margin-left: -140px;
 	}
 	.head-d{
 		font-size: 16px;
+	}
+	.proff-title{
+		font-size: 20px;
 	}
 }

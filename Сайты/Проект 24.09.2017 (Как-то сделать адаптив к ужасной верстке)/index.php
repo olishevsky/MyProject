@@ -130,14 +130,14 @@
         <img src="img/26-cat.jpg" data-toggle="modal" data-target="#grifon8" style="cursor: pointer;" alt="">
         <img src="img/27-cat.jpg" data-toggle="modal" data-target="#grifon9" style="cursor: pointer;" alt="">
         <a href="strizhka-metisa-besporodnoy-sobaki.html#price"><img src="img/28-cat.jpg" alt=""></a>
-        <a href="#" class="btn btn-success all ms_booking" data-url="https://n76028.yclients.com/company:91267/idx:0/service?o=">СМОТРЕТЬ ПОЛНЫЙ СПИСОК ПОРОД</a>
+        <a href="#" class="btn btn-success all ms_booking dog-button-adaptive" data-url="https://n76028.yclients.com/company:91267/idx:0/service?o=">СМОТРЕТЬ ПОЛНЫЙ СПИСОК ПОРОД</a>
       </div>
     </div>
   </div>
     <br /><br />
     <div class="contens text-center">
       <span class="h-con">В САЛОНЕ АРЧИБАЛЬД Для Вас:</span>
-      <div class="container bb">
+      <div class="container bb adaptive-info-salon">
         <div class="col-xs-4">
           <div class="contan">
             <img src="img/1-с.jpg" alt=""><br>
@@ -197,7 +197,7 @@
     </div>
 <div class="clearfix"></div>
   <div class="text-center">
-    <div class="container bb">
+    <div class="container bb adaptive-info-salon-2">
       <div class="col-xs-4">
         <div class="contan">
           <img src="img/7-c.jpg" alt=""><br>
@@ -435,7 +435,7 @@
 <div class="clearfix"></div>
     <div class="proffi text-center">
       <p class="proff-title">Наши профессионалы</p>
-      <div class="container">
+      <div class="container adaptive-masters-info">
         <div class="pro-con">
           <span>Евгения <br> Панфилова</span><br><br>
           <img src="img/1-proffi.jpg" alt=""><div class="clearfix">
@@ -546,7 +546,7 @@
       </div>
 <div class="clearfix"></div>
       <div class="manual">
-        <div class="container">
+        <div class="container adaptive-7-reasons">
           <div class="text-center title-m">
             <p>7 причин не стричь питомца на дому, </p>
             <span>а обратиться к нам в салон</span>
