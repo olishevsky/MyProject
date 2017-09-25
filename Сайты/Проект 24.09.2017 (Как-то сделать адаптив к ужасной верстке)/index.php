@@ -10,6 +10,7 @@
 
   gtag('config', 'UA-100002664-2');
 </script>
+	<meta name="viewport" content="width=device-width, initial-scale=0.43">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Зоосалон "Арчибальд"</title>
@@ -43,9 +44,9 @@
             <p class="text-center">г. Москва <br>Проспект Вернадского, д. 27, корп.1 <br>ЮЗАО, м. Проспект Вернадского</p>
           </div>
           <div class="col-xs-6 tell header__head-adaptive-block-2-element-2">
-      <i class="fa fa-phone" style="font-size: 30px; position: absolute; top:10px; left:14px;" aria-hidden="true"></i>
-            <span class="m-call-tracking-widget" data-settings='{"id":10058}' style="position: absolute;">8 (966) 341-57-75</span><br>
-             <span style="position: absolute;top: 28px;">+7 (499) 322-04-32</span>
+      <i class="fa fa-phone" style="font-size: 42px; position: absolute; top:12px; left:16px;" aria-hidden="true"></i>
+			 <a href="tel:84996535258" class="m-call-tracking-widget style-phone" data-settings='{"id":10058}' style="position: absolute; top: -18px;">8 (966) 341-57-75</a>
+             <a href="tel:84993220432"  class="style-phone" style="position: absolute; top: 28px;">+7 (499) 322-04-32</a>
           </div>
         </div>
       </div>
@@ -141,7 +142,7 @@
       <div class="container bb adaptive-info-salon">
         <div class="col-xs-4">
           <div class="contan">
-            <img src="img/1-с.jpg" alt=""><br>
+            <img src="img/1-c.jpg" alt=""><br>
             <span class="title-con">Сертифицированные <br> мастера</span><br><br>
             <span class="con-con">Ваш любимец окажется в руках настоящих профессионалов - преподавателей международной академии груминга, действующих грумеров с многолетним опытом и всеми необходимыми знаниями зоопсихологии и ветеринарии.</span>
           </div>
@@ -230,7 +231,7 @@
           <span class="f-span">После визита к нам, Ваш любимец будет неотразим</span><br>
           <span class="s-span">Больше фотографий в нашем инстаграм <b>@archibaldgrooming</b></span>
         </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -238,86 +239,86 @@
           </ol>
           <div class="carousel-inner">
             <div class="item active">
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/1-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/2-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <a href="img/3-p.jpg"><img src="img/3-p.jpg" alt=""></a>
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/4-p.jpg" alt="">
                 </div>
               </div>
 <div class="clearfix"></div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/5-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/6-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/7-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/8-p.jpg" alt="">
                 </div>
               </div>
             </div>
             <div class="item">
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/9-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/10-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/11-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/12-p.jpg" alt="">
                 </div>
               </div>
 <div class="clearfix"></div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/13-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/14-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/15-p.jpg" alt="">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 adaptive-carousel-inner-block">
                 <div class="photo">
                   <img src="img/16-p.jpg" alt="">
                 </div>
@@ -333,6 +334,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+		<button class="adaptive-no-carousel">Показать больше</button>
       </div>
     </div>
   </div>
@@ -1242,8 +1244,9 @@
     </script>		
     <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="//w76028.yclients.com/widgetJS" charset="UTF-8"></script>
-  <script type="text/javascript" src="//widget.mango-office.ru/js/c-t-w.min.js"></script> 
+  <script type="text/javascript" src="//widget.mango-office.ru/js/c-t-w.min.js"></script>
   <script type="application/javascript">!function(t,e){for(var i=document.getElementsByClassName(t),n=0;n<i.length;n++){var r=i[n];if("true"!=r.getAttribute("init")){var a=new MCTWidget({host:e,elem:r});a.initWidget(),r.setAttribute("init","true")}}}("m-call-tracking-widget", window.location.protocol + "//widget.mango-office.ru");</script>
   <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45723894 = new Ya.Metrika({ id:45723894, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45723894" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <script src="js/more-img.js"></script>
   </body>
 </html>
