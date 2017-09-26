@@ -1268,11 +1268,59 @@ margin-left: -140px;
 .adaptive-no-carousel{
 	display: none;
 }
-.background-x5{
+.background-h1{
+	background: url(../img/1-h.jpg) no-repeat;
+}
+.background-h2{
+	background: url(../img/2-h.jpg) no-repeat;
+}
+.background-h3{
+	background: url(../img/3-h.jpg) no-repeat;
+}
+.background-h4{
+	background: url(../img/4-h.jpg) no-repeat;
+}
+.background-h5{
+	background: url(../img/5-h.jpg) no-repeat;
+}
+.background-h6{
+	background: url(../img/6-h.jpg) no-repeat;
+}
+.background-h7{
+	background: url(../img/7-h.jpg) no-repeat;
+}
+.background-h8{
+	background: url(../img/8-h.jpg) no-repeat;
+}
+.background-h9{
+	background: url(../img/9-h.jpg) no-repeat;
+}
+.background-h10{
+	background: url(../img/10-h.jpg) no-repeat;
+}
+.background-h11{
 	background: url(../img/11-h.jpg) no-repeat;
 }
-.background-x14{
-	background: url(../img/6-h.jpg) no-repeat;
+.background-h12{
+	background: url(../img/12-h.jpg) no-repeat;
+}
+.background-h13{
+	background: url(../img/13-h.jpg) no-repeat;
+}
+.background-h14{
+	background: url(../img/14-h.jpg) no-repeat;
+}
+.background-h15{
+	background: url(../img/15-h.jpg) no-repeat;
+}
+.background-h16{
+	background: url(../img/16-h.jpg) no-repeat;
+}
+.background-h17{
+	background: url(../img/17-h.jpg) no-repeat;
+}
+.background-h18{
+	background: url(../img/18-h.jpg) no-repeat;
 }
 .time-1{
 	width: 316px;
@@ -1833,6 +1881,10 @@ margin-left: -140px;
 	}
 	.h-con{
 		font-size: 42px;
+	}
+	.two-category {
+		font-size: 32px;
+		line-height: 38px;
 	}
 }
 @media screen and (max-width: 800px) {
