@@ -10,8 +10,8 @@
 
   gtag('config', 'UA-100002664-2');
 </script>
-	<meta name="viewport" content="width=device-width, initial-scale=0.43">
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.43">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Зоосалон "Арчибальд"</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,10 +32,10 @@
         </div>
         <div class="col-xs-4 left-text header__head-adaptive-block-1">
           <div class="col-xs-6">
-            <a href="#porody" class="btn btn-success price-btn">Породы и цены</a>
+            <a href="#porody" class="btn btn-success price-btn price-btn-general">Породы и цены</a>
           </div>
           <div class="col-xs-6">
-            <a href="#" class="btn btn-success price-btn online ms_booking header__head-adaptive-block-1-button-2" data-url="https://n78629.yclients.com/company:91267?o=s1112238" id="uid3">Онлайн запись</a>
+            <a href="#" class="btn btn-success price-btn online ms_booking header__head-adaptive-block-1-button-2 price-btn-general" data-url="https://n78629.yclients.com/company:91267?o=s1112238" id="uid3">Онлайн запись</a>
           </div>
           <p class="text-center">с 10:00 до  22:00 | БЕЗ ВЫХОДНЫХ</p>
         </div>
@@ -443,7 +443,6 @@
         <div class="pro-con">
           <span>Евгения <br> Панфилова</span><br><br>
           <img src="img/1-proffi.jpg" alt=""><div class="clearfix">
-
           </div>
           <p style="padding: 6px 5px">Кинолог. Более 7 лет занимается грумином. Закончила курсы хендлера, занималась дрессировкой собак, работала при РРК (Российский ретривер клуб) хендлером и дрессировщиком ОКД(общий курс дрессировки). Учавствовала во многих выставках. В 2006 году закончила "Российский государственный аграрный университет - МСХА имени К.А.Тимирязева"присвоена квалификация "Зооинженер".</p><br>
           <a href="#" class="btn btn-primary proff-btn ms_booking" data-url="https://w78644.yclients.com">ЗАПИСАТЬСЯ К ЕВГЕНИИ</a>
