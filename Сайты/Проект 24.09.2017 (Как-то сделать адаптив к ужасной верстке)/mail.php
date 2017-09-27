@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "jive-live@mail.ru ";
+$recepient = "jive-live@mail.ru";
 
 $name = trim($_POST["name"]);
 $tell = trim($_POST["tell"]);
