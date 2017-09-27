@@ -44,9 +44,9 @@
             <p class="text-center">г. Москва <br>Проспект Вернадского, д. 27, корп.1 <br>ЮЗАО, м. Проспект Вернадского</p>
           </div>
           <div class="col-xs-6 tell header__head-adaptive-block-2-element-2">
-      <i class="fa fa-phone" style="font-size: 42px; position: absolute; top:12px; left:16px;" aria-hidden="true"></i>
-			 <a href="tel:84996535258" class="m-call-tracking-widget style-phone" data-settings='{"id":10058}' style="position: absolute; top: -18px;">8 (966) 341-57-75</a>
-             <a href="tel:84993220432"  class="style-phone" style="position: absolute; top: 28px;">+7 (499) 322-04-32</a>
+      <i class="fa fa-phone" id="phone-style-icon" aria-hidden="true"></i>
+			 <a href="tel:84996535258" id="style-phone_1"  class="m-call-tracking-widget style-phone" data-settings='{"id":10058}'>8 (966) 341-57-75</a>
+             <a href="tel:84993220432" id="style-phone_2"  class="style-phone">+7 (499) 322-04-32</a>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
       <div class="container container-fix container__block-1-adaptive">
       <div class="head-block text-center">
         <span class="head-h" style="line-height:1.1;">ПРОФЕССИОНАЛЬНАЯ СТРИЖКА <br> СОБАК И КОШЕК</span><br>
-        <span class="head-d"><b>Наблюдайте за стрижкой любимца ОНЛАЙН с телефона. <br>До 30% стоимости услуг возвращаем Вам на счет.</b></span>
+        <span class="head-d"><b>Наблюдайте за стрижкой любимца ОНЛАЙН с телефона. <br class="br-block">До 30% стоимости услуг возвращаем Вам на счет.</b></span>
       </div>
       </div>
       <div class="container">

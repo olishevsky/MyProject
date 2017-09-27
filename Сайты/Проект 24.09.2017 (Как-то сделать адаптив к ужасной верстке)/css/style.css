@@ -76,8 +76,6 @@ body {
 .tell a{
   background: #fff;
   color: #000;
-  font-size: 32px;
-  font-weight: bold;
   padding: 8px 5px;
 }
 .tell span {
@@ -1261,9 +1259,24 @@ margin-left: -140px;
 		width: 345px;
 		margin-top: 20px;
 	}
+#phone-style-icon{
+	font-size: 24px;
+	position: absolute;
+	top: 6px;
+	left: 32px;
+}
 .style-phone{
 	font-family: arial;
-	width: 320px;
+	width: 360px;
+	font-size: 18px;
+}
+#style-phone_1{
+	position: absolute;
+	top: -14px;
+}
+#style-phone_2{
+	position: absolute;
+	top: 16px;
 }
 .adaptive-no-carousel{
 	display: none;
@@ -1403,6 +1416,38 @@ margin-left: -140px;
 	}
 }
 @media screen and (max-width: 1200px){
+	.tty{
+		width: auto;
+		height: auto;
+		margin-left: 0;
+		
+	}
+	.err{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.err textarea{
+		resize: none;
+		width: 100%;
+	}
+	#phone-style-icon{
+		font-size: 42px;
+		position: absolute;
+		top:12px;
+		left:16px;
+	}
+	.style-phone{
+		font-family: arial;
+		width: 320px;
+		font-size: 32px;
+		
+	}
+	#style-phone_1{
+		top: -18px;
+	}
+	#style-phone_2{
+		top: 28px;
+	}
 	.ddd{
 		min-width: auto;
 		width: auto;
