@@ -20,8 +20,8 @@ reviewPhotoCircleCircle3.onclick = function(){
 
 if(document.documentElement.clientWidth >= 940 ){
 	var switchMargin1 = "0";
-	var switchMargin2 = "-690px";
-	var switchMargin3 = "-1380px";
+	var switchMargin2 = "-686px";
+	var switchMargin3 = "-1372px";
 }
 else if(document.documentElement.clientWidth >= 320 ){
 	var switchMargin1 = "15px";
