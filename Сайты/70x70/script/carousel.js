@@ -18,12 +18,10 @@ reviewPhotoCircleCircle3.onclick = function(){
 }
 
 
-if(document.documentElement.clientWidth >= 940 ){
 	var switchMargin1 = "0";
 	var switchMargin2 = "-686px";
-	var switchMargin3 = "-1372px";
-}
-else if(document.documentElement.clientWidth >= 320 ){
+	var switchMargin3 = "-1370px";
+/*else if(document.documentElement.clientWidth >= 320 ){
 	var switchMargin1 = "15px";
 	var switchMargin2 = "-315px";
 	var switchMargin3 = "-635px";
@@ -32,7 +30,7 @@ else{
 	var switchMargin1 = "40px";
 	var switchMargin2 = "-250px";
 	var switchMargin3 = "-540px";
-}
+}*/
 
 reviewContainerSwitchRight.onclick = function(){
 	review++;

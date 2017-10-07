@@ -59,10 +59,18 @@ setInterval(function(){
 			sekunden = 59;
 		}
 		else{
-			stunden--;
-			stunden1.innerHTML = stunden;
-			stunden2.innerHTML = stunden;
-			minuten = 59;
+			if(stunden < 10){
+				stunden--;
+				stunden1.innerHTML = '0' + stunden;
+				stunden2.innerHTML = '0' + stunden;
+				minuten = 59;
+			}
+			else{
+				stunden--;
+				stunden1.innerHTML = stunden;
+				stunden2.innerHTML = stunden;
+				minuten = 59;
+			}
 		}
 	}
 }, 1000);
