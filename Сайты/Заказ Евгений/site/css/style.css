@@ -35,7 +35,7 @@
  }
  .modal-project__contener{
  	width: auto;
- 	height: 90%;
+ 	height: auto;
  	background: #fff;
  	border-radius: 10px;
  	position: relative;
@@ -97,9 +97,13 @@
  }
  .block1-content__title-1{
  	font-size:42px;
+    margin-bottom: -3px;
+    display: block;
  }
   .block1-content__title-2{
  	font-size:32px;
+ 	display: block;
+ 	margin-bottom: -10px;
  }
   .block1-content__title-3{
  	font-size:18px;
@@ -122,6 +126,7 @@
  }
  .head-title1{
  	font-size: 31px;
+ 	text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
  }
  .person-date-2{
  	margin-bottom: 10px;
@@ -226,7 +231,7 @@
 	transform: rotate(-90deg);
 }
 .modal__contener-table{
-	margin: 10px 0;
+	margin: 10px 0 20px;
 }
 .modal__contener-table td{
 	padding: 5px;
