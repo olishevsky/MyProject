@@ -252,49 +252,5 @@ $(document).ready(function() {
         }
     }(jQuery),
     function() {
-        var t = {
-            initialize: function() {
-                this.setUpListeners()
-            },
-            setUpListeners: function() {
-                $("form").on("submit", t.submitForm), $("form").on("keydown", "input", t.removeError)
-            },
-            submitForm: function(i) {
-                i.preventDefault();
-                var e = $(this),
-                    s = e.find('button[type="submit"]');
-                if (!1 === t.validateForm(e)) return !1;
-                s.attr("disabled", "disabled");
-                var o = e.serialize();
-                $.ajax({
-                    url: "contact_form/contact_process.php",
-                    type: "POST",
-                    data: o
-                }).done(function(t) {
-                    "OK" === t ? (setTimeout(function() {
-                        $(".close-modal").click()
-                    }, 150), setTimeout(function() {
-                        $(".success-modal").click()
-                    }, 500), setTimeout(function() {
-                        $(".close-modal").click()
-                    }, 3e3)) : e.html(t)
-                }).always(function() {
-                    s.removeAttr("disabled")
-                })
-            },
-            validateForm: function(t) {
-                var i = t.find('input[type="tel"]'),
-                    e = !0;
-                return $.each(i, function(t, i) {
-                    var s = $(i),
-                        i = s.val(),
-                        o = s.parents(".form-group");
-                    0 === i.length ? (o.addClass("has-error").removeClass("has-success"), e = !1) : o.addClass("has-success").removeClass("has-error")
-                }), e
-            },
-            removeError: function() {
-                $(this).parents(".form-group").removeClass("has-error")
-            }
-        };
-        t.initialize()
+        t.initialize();
     }();

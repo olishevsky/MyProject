@@ -237,4 +237,135 @@
 	padding: 5px;
 	border: 1px solid #000;
 }
+.text-vacancy{
+	font-size: 18px;
+	text-align: center;
+}
+.services{
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+.text-services{
+	font-size: 18px;
+	text-align: center;
+}
+@media (max-width: 1200px){
+	.width-adaptive{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.big-arrow{
+		display: none;
+	}
+	.form-tabs-adaptive{
+		width: 100%;
+	}
+	.adaptive-title{
+		width: 100%;
+		margin-top: 125px;
+	}
+	.block1-content__title-3{
+		position: absolute;
+		top: 135px;
+		left: 0;
+		right: 0;
+	}
+	.form-tabs{
+		width: 360px;
+		position: absolute;
+		bottom: -1200px;
+		left: calc(50% - 180px);
+	}
+	.house{
+		left: calc(50% - 438px) !important;
+		bottom: -70px !important;
+	}
+	.block1-content__title{
+		width: calc(100% - 40px);
+		margin-left: 20px;
+		margin-right: 20px;
+		text-align: center;
+	}
+	.services{
+		margin-top: 800px;
+	}
+	.adaptive-phone{
+		width: 195px;
+		height: 70px;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+	}
+	.adaptive-logo{
+		width: 165px;
+		height: 79px;
+		position: absolute;
+		top: 30px;
+		left: 20px;
+	}
+	.adaptive-menu{
+		width: 470px;
+		height: 132px;
+		position: absolute;
+		top: 30px;
+		left: calc(50% - 235px);
+	}
+	.column-adaptive{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.column-adaptive-width{
+		width: 80%;
+	}
+	.selectBox{
+		width: 260px !important;
+	}
+	.selectBox-adaptive{
+		width: 260px !important;
+		height: 49px;
+	}
+	.input-adaptive{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.block-content__contenter{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.block-content__contenter img{
+		margin: 20px 0;
+	}
+	.df32{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.d32f{
+		margin: 0px 10px 15px;
+	}
+	.block6{
+		height: 550px;
+		background-size: cover;
+	}
+	body{
+		overflow-x: hidden;
+	}
+	.order-btn{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.order-btn a{
+		margin: 10px 0;
+	}
+	.block10{
+		height: 350px;
+		background-size: cover;
+		padding-bottom: 40px;
+	}
+}
 
